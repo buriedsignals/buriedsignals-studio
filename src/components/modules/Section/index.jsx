@@ -1,0 +1,59 @@
+// Styles
+import { useRouter } from "next/router"
+import { useCallback, useEffect, useRef } from "react"
+import { SectionStyle } from "./index.style"
+
+export default function Section({ children, ...props }) {
+  // Router
+  const router = useRouter()
+  // References
+  const sectionRef = useRef()
+  // Effects
+  useEffect(() => {
+    const posYStart = sectionRef.current.offsetTop - (sectionRef.current.offsetHeight / 2)
+    const posYEnd = sectionRef.current.offsetTop + (sectionRef.current.offsetHeight / 2)
+    window.addEventListener("scroll", (e) => {
+    console.log(window.scrollY, (document.body.getBoundingClientRect().height - window.innerHeight) - 20, window.scrollY == (document.body.getBoundingClientRect().height - window.innerHeight) - 20)
+      if (window.scrollY >= posYStart && window.scrollY <= posYEnd) {
+        const pageEls = document.querySelectorAll('.header .page')
+        pageEls.forEach(pageEl => {
+          const link = pageEl.querySelector('a')
+          link.classList.remove('is-active')
+          const split = link.href.split('/')
+          const id = split[split.length - 1] == '' ? '#home' : split[split.length - 1]
+          if (id === '#' + sectionRef.current.firstChild.id) {
+            link.classList.add('is-active')
+          }
+        })
+      } else if (window.scrollY >= (document.body.getBoundingClientRect().height - window.innerHeight) - 20) {        
+        const pageEls = document.querySelectorAll('.header .page')
+        pageEls.forEach(pageEl => {
+          const link = pageEl.querySelector('a')
+          link.classList.remove('is-active')
+          const split = link.href.split('/')
+          const id = split[split.length - 1] == '' ? '#home' : split[split.length - 1]
+          if (id === '#contact') {
+            link.classList.add('is-active')
+          }
+        })
+      } else if (window.scrollY == 0) {   
+        console.log('okok')     
+        const pageEls = document.querySelectorAll('.header .page')
+        pageEls.forEach(pageEl => {
+          const link = pageEl.querySelector('a')
+          link.classList.remove('is-active')
+          const split = link.href.split('/')
+          const id = split[split.length - 1] == '' ? '#home' : split[split.length - 1]
+          if (id === '#home') {
+            link.classList.add('is-active')
+          }
+        })
+      }
+    });
+  })
+  return (
+    <SectionStyle ref={ sectionRef } { ...props }>
+      { children }
+    </SectionStyle>
+  )
+}
