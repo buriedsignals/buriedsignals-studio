@@ -28,10 +28,12 @@ export default function Accordion({ children, titleButton, opened = false, ...pr
   // Functions
   const onClickButton = () => {
     const newAccordionsOpen = accordionsOpen
+    const currentAccordionValue = accordionsOpen[idAccordion]
+    const openOther = currentAccordionValue ? true : false
     for (const property in newAccordionsOpen) {
-      newAccordionsOpen[property] = false
+      newAccordionsOpen[property] = openOther
     }
-    newAccordionsOpen[idAccordion] = !newAccordionsOpen[idAccordion]
+    newAccordionsOpen[idAccordion] = !currentAccordionValue
     useStore.setState({ accordionsOpen: newAccordionsOpen })
   }
   return (

@@ -6,8 +6,12 @@ export const ContactStyle = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  padding-top: 80px;
-  padding-bottom: 100px;
+  padding-top: 180px;
+  padding-bottom: 200px;
+  ${down('md')} {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
   p {
     text-align: center;
   }

@@ -21,7 +21,7 @@ export default function HeaderDesktop() {
   }
   return (
     <HeaderStyle>
-      <div className="header-desktop-container container-module-extra-large">
+      <div className="header-desktop-container container-module-extra-extra-large">
         <Link href="/">
           <a className="logo" onClick={ onClickLink }>
             <LogoIcon colored={ getTheme() == "light" } />

@@ -52,7 +52,6 @@ const projects = [
     }
   },
   {
-    link: "https://www.google.fr",
     name: "Hello sunshine",
     infos: {
       description: "An interactive experience for",
@@ -62,7 +61,7 @@ const projects = [
 ]
 
 export default function Work({ ...props }) {
-  const colors = useGradientColor("#71F2BA", "#377A5D", projects.length)
+  const colors = useGradientColor("#60d09f", "#377A5D", projects.length)
   // Handlers
   const onMouseEnter = (e, index) => {
     e.target.style.background = colors[index]
@@ -78,13 +77,23 @@ export default function Work({ ...props }) {
           { projects.map((project, index) => {
             return (
               <li className="project" key={ index }>
-                <a href={ project.link } target="_blank" rel="noopener noreferrer" onMouseEnter={ (e) => onMouseEnter(e, index) } onMouseLeave={ (e) => onMouseLeave(e) }>
-                  <div className="datas">
-                    <p className="name typography-03">{ project.name }</p>
-                    <p className="infos typography-06">{ project.infos.description } <span className="provider typography-07">{ project.infos.provider }</span></p>
+                { project.link ? 
+                  <a className="datas-container" href={ project.link } target="_blank" rel="noopener noreferrer" onMouseEnter={ (e) => onMouseEnter(e, index) } onMouseLeave={ (e) => onMouseLeave(e) }>
+                    <div className="datas">
+                      <p className="name typography-03">{ project.name }</p>
+                      <p className="infos typography-06">{ project.infos.description } <span className="provider typography-07">{ project.infos.provider }</span></p>
+                    </div>
+                    <Arrow02Icon />
+                  </a>
+                  :
+                  <div className="datas-container no-link" onMouseEnter={ (e) => onMouseEnter(e, index) } onMouseLeave={ (e) => onMouseLeave(e) }>
+                    <div className="datas">
+                      <p className="name typography-03">{ project.name }</p>
+                      <p className="infos typography-06">{ project.infos.description } <span className="provider typography-07">{ project.infos.provider }</span></p>
+                    </div>
+                    <Arrow02Icon />
                   </div>
-                  <Arrow02Icon />
-                </a>
+                }
               </li>
             )
           }) }

@@ -101,4 +101,7 @@ export const HeaderStyle = styled.div`
       }
     }
   }
+  &.is-hide {
+    opacity: 0;
+  }
 `

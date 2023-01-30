@@ -43,7 +43,7 @@ export default function HeaderMobile() {
   }
   return (
     <HeaderStyle>
-      <div className="header-mobile-container container-module-extra-large">
+      <div className="header-mobile-container container-module-extra-extra-large">
         <Link href="/">
           <a className="logo" onClick={ onClickLink }>
             <LogoIcon colored={ getTheme() == "light" || menuOpen } />

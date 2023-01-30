@@ -152,6 +152,10 @@ button {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 100vw;
   min-height: 100vh;
@@ -186,7 +190,7 @@ button, a {
   font-family: 'Gilroy';
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 95.52%;
   letter-spacing: 0.06em;
 }
@@ -221,7 +225,7 @@ button, a {
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
-  line-height: 105%;
+  line-height: 110%;
 }
 
 .typography-06 {
@@ -292,7 +296,32 @@ button, a {
   }
 }
 
+.typography-05 .underline {
+  height: 3px !important;
+}
+
+.typography-09 .underline {
+  height: 2px !important;
+}
+
+@media screen and (max-width: 955px) {
+  .typography-05 .underline {
+    height: 2.5px !important;
+  }
+
+  .typography-09 .underline {
+    height: 2px !important;
+  }
+}
 /* Container */
+
+.container-module-extra-extra-large {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding-right: 60px;
+  padding-left: 60px;
+}
 
 .container-module-extra-large {
   width: 100%;
@@ -327,6 +356,11 @@ button, a {
 }
 
 @media screen and (max-width: 955px) {
+  .container-module-extra-extra-large {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
   .container-module-extra-large {
     padding-right: 30px;
     padding-left: 30px;

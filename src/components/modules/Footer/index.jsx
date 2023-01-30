@@ -9,7 +9,7 @@ import FooterMobile from "@/components/modules/Footer/Mobile"
 
 export default function Footer() {
   return (
-    <FooterStyle className="tooter">
+    <FooterStyle className="footer">
       { useBreakpoint(down('md')) ?
           <FooterMobile />
         : 

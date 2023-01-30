@@ -10,7 +10,7 @@ import useTheme from "@/hooks/useTheme"
 import MoreIcon from "@/components/icons/More"
 import gsap, { TweenMax } from "gsap"
 
-export default function Popup({ children, className = '', titleButton, ...props }) {
+export default function Popup({ children, className = '', titleButton, callBackButtonPopup = false, ...props }) {
   // Hooks
   const [opened, setOpened] = useToggle(false) 
   const [getTheme, setTheme] = useTheme()
@@ -24,9 +24,13 @@ export default function Popup({ children, className = '', titleButton, ...props 
       setOpened(popupOpen)
     }
   }, [popupOpen])
+  useEffect(() => {
+    callBackButtonPopup && onClickButton()
+  }, [callBackButtonPopup])
   // Functions
   const onClickButton = (e) => {
-    if (e.target.parentNode.classList.contains('open-button-container-popup')) {
+    console.log('ok')
+    if (e && e.target.parentNode.classList.contains('open-button-container-popup')) {
       const bounding = e.target.getBoundingClientRect()
       closeButtonContainerRef.current.style.top = `${ bounding.y }px`
       closeButtonContainerRef.current.style.left = `${ bounding.x }px`
@@ -36,14 +40,14 @@ export default function Popup({ children, className = '', titleButton, ...props 
     if (opened) {
       setTimeout(() => {
         setTheme('light')
-      }, 2000)
+      }, 1200)
     } else {
       setTimeout(() => {
         setTheme('dark')
       }, 1000)
     }
     const timeline = new gsap.timeline()
-    timeline.set(e.target.querySelector('svg'), { x: 0, y: 0 })
+    e && timeline.set(e.target.querySelector('svg'), { x: 0, y: 0 })
   }
   const onMouseMoveButton = (e) => {
     const cursorPosition = {
@@ -75,20 +79,24 @@ export default function Popup({ children, className = '', titleButton, ...props 
   }
   const onMouseLeaveButton = (e) => {
     const timeline = new gsap.timeline()
-    timeline.to(e.target.querySelector('svg'), 0.2, { x: 0, y: 0 }, '+=0.1')
+    timeline.to(e.target.querySelector('svg'), 0.2, { x: 0, y: 0 }, '+=0.225')
   }
   return (
     <PopupStyle { ...props } className={ `${ className } popup ${ opened ? ' is-open' : '' }` }>
       <div className="open-button-container-popup button-container-popup">
         <button className="open-button-popup button-popup" onClick={ onClickButton } onMouseMove={ onMouseMoveButton } onMouseLeave={ onMouseLeaveButton }>
+          <div className="circle circle-before" />
+          <div className="circle circle-after" />
           <MoreIcon />
           <div className="transition-container-popup" />
         </button>
         <p className="typography-02">{ titleButton }</p>
       </div>
-      <div className="panel-container-popup">
+      <div className="panel-container-popup theme-dark">
         <div ref={ closeButtonContainerRef } className="close-button-container-popup button-container-popup">
           <button className="close-button-popup button-popup" onClick={ onClickButton } onMouseMove={ onMouseMoveButton } onMouseLeave={ onMouseLeaveButton }>
+            <div className="circle circle-before" />
+            <div className="circle circle-after" />
             <MoreIcon />
           </button>
           <p className="typography-02">Close</p>

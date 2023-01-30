@@ -7,6 +7,7 @@ export const ExpertiseStyle = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 150px;
     ${down('md')} {
       align-items: flex-end;
       width: fit-content;
@@ -70,6 +71,7 @@ export const ExpertiseStyle = styled.div`
     }
   }
   .client-container {
+    padding-top: 100px;
     padding-bottom: 30px;
     h3 {
       padding: 100px 0 64px;

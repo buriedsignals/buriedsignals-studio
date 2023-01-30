@@ -16,30 +16,39 @@ export const PopupStyle = styled.div`
           width: 77.5px;
           height: 77.5px;
         }
-        &::before, &::after {
+        .circle {
           position: absolute;
           top: 50%; left: 50%;
           content: '';
           display: block;
           border-radius: 100%;
           transform: translate3D(-50%, -50%, 0);
+          pointer-events: none;
         }
-        &::before {
+        .circle-before {
           width: 100%;
           height: 100%;
           opacity: 0.5;
           border: 1px solid var(--color-green04);
         }
-        &::after {
+        .circle-after {
           width: 90%;
           height: 90%;
           border: 1px solid var(--color-green04);
+          transition: width 0.25s ease, height 0.25s ease;
         }
         svg {
           pointer-events: none;
           ${down('md')} {
             width: 22.5px;
             height: 22.5px;
+          }
+        }
+        &:hover {
+          .circle-after {
+            width: 100%;
+            height: 100%;
+            transition: width 0.25s ease, height 0.25s ease;
           }
         }
       }
@@ -64,7 +73,7 @@ export const PopupStyle = styled.div`
           border-radius: 100%;
           transform: translate3D(-50%, -50%, 0);
           // Retour
-          transition: all 1.2s cubic-bezier(0.64, 0, 0.78, 0) 0.6s;
+          transition: all 1.5s cubic-bezier(0.64, 0, 0.78, 0);
           z-index: 2;
           .no-animation-popup & {
             transition: initial;
@@ -75,7 +84,7 @@ export const PopupStyle = styled.div`
     .close-button-container-popup {
       position: absolute;
       .close-button-popup {
-        &::after {
+        .circle-after {
           background: var(--color-beige);
         }
         svg {

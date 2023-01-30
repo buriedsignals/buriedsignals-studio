@@ -9,8 +9,8 @@ export default function Contact({ ...props }) {
     <Section>
       <ContactStyle { ...props } id="contact" className="container-module-small">
         <p className="typography-09">Do you need to create clarity in complexity?</p>
-        <a className="typography-09" href="http://" target="_blank" rel="noopener noreferrer">
-          <SpanGradientText>Let’s Contact together.</SpanGradientText>
+        <a className="typography-09" href="mailto:tom@buriedsignals.com" target="_blank" rel="noopener noreferrer">
+          <SpanGradientText hover={ true } revert={ true }>Let’s&nbsp;Contact&nbsp;together.</SpanGradientText>
         </a>
       </ContactStyle>
     </Section>

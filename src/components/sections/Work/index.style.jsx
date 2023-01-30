@@ -2,6 +2,10 @@ import styled from "styled-components";
 import { down } from "styled-breakpoints";
 
 export const WorkStyle = styled.div`
+  padding-top: 100px;
+  ${down('md')} {
+    padding-top: 0;
+  }
   h2 {
     padding: 120px 0 65px;
   }
@@ -32,7 +36,7 @@ export const WorkStyle = styled.div`
           display: block;
         }
       }
-      a {
+      .datas-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -70,6 +74,11 @@ export const WorkStyle = styled.div`
             }
           }
         }
+        &.no-link {
+          svg {
+            opacity: 0;
+          }
+        }
         svg {
           width: 14px;
           transform: translate3D(0, 0, 0);
@@ -78,9 +87,17 @@ export const WorkStyle = styled.div`
         }
         &:hover {
           transition: all .35s cubic-bezier(0.12, 0, 0.39, 0);
+          p {
+            color: var(--color-white);
+            transition: color 0.35s cubic-bezier(0.12, 0, 0.39, 0);
+          }
           svg {
             transform: translate3D(10px, 0, 0);
-            transition: transform 0.2s ease;
+            transition: transform 0.35s cubic-bezier(0.12, 0, 0.39, 0);
+            path {
+              stroke: var(--color-white);
+              transition: color 0.35s cubic-bezier(0.12, 0, 0.39, 0);
+            }
           }
         }
       }
