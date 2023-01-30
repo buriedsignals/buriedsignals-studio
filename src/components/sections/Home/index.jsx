@@ -64,9 +64,10 @@ export default function Home({ ...props }) {
           <TitleFirstIconText letterColored={ false }>What is visualitation?</TitleFirstIconText>
           <div className="description-visualization-popup">
             <p className="typography-08">Visualization is a process that involves turning complex information or data into visual representations, such as charts, graphs, and maps, in order to better understand and communicate insights.</p>
+            <br />
             <p className="typography-08">It can help to improve accessibility, comprehension, and memory by allowing people to make sense of complex data in a more intuitive way.</p>
-            <p className="typography-08">In today's world many aspects of society, science, business, finance, journalism and everyday life are becoming increasingly quantified and intricate.</p>
-            <p className="typography-08">Visualization is essential for companies or individuals who need to effectively communicate nuanced problems to a wide audience.</p>
+            <br />
+            <p className="typography-08">In today's world many aspects of society, science, business, finance, journalism and everyday life are becoming increasingly quantified and intricate. Visualization is essential for companies or individuals who need to effectively communicate nuanced problems to a wide audience.</p>
           </div>
         </PopupModule>
       </HomeStyle>

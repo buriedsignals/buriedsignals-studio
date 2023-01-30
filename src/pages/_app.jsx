@@ -12,11 +12,11 @@ import useScroll from '@/hooks/useScroll';
 import Layout from '@/components/layouts';
 
 // Metas
-const title = 'Nuanced studio'
+const title = 'Nuanced'
 const url = 'https://www.nuanced.studio/'
-const description = "Discover the world's best visual narratives. Inspiration, insights and resources for interactive storytelling."
+const description = "A film and interactive design studio specializing in information visualization."
 const keywords = 'dataviz, information, design, visualisation, narrative, interactive, visual, journalism, awards, resources, insights, courses, community, data'
-const author = 'Nuanced studio'
+const author = 'Nuanced'
 const image = url + 'images/img-meta.jpg'
 
 function App({ Component, pageProps }) {

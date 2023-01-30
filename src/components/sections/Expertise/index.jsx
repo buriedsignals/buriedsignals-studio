@@ -18,16 +18,18 @@ export default function Expertise({ ...props }) {
         <div className="expertise-container container-module-large">
           <div className="studio-container">
             <TitleFirstIconText letterColored={ true }>What we do</TitleFirstIconText>
-            <p className="typography-08">As a film production, design and development studio that specializes in narrative vizualisation, we combine the dynamic and interactive capabilities of technology with design to create unique narratives or share existing insights about our client’s data with wider audiences.</p>
+            <p className="typography-08">As a film production, design and development studio that specializes in information vizualisation, we combine the dynamic and interactive capabilities of technology with design to create unique narratives or share existing insights about our client’s data with wider audiences.</p>
           </div>
           <PopupModule className="studio-popup" titleButton="Read more about the studio">
-            <Accordion titleButton="What we make" opened={ true }>
-              <p className="typography-08">These projects can take different forms, such as telling explanatory stories with illustration, enabling users to explore and find their own stories within interactive experiences, or using animation and documentary filmmaking to guide the audience through a particularly complex subject. Other projects require the combination of both explanatory and exploratory approaches to meet the needs of different users.</p>
+            <Accordion titleButton="What we produce" opened={ true }>
+              <p className="typography-08">Our projects come in many shapes and sizes. Whether it is telling explanatory stories with illustration, enabling users to explore and find their own stories within interactive experiences or using animation and documentary filmmaking to guide audiences through complex subjects.</p>
+              <p className="typography-08">Sometimes projects require the combination of both explanatory and exploratory approaches to meet the needs of different users.</p>
               <p className="typography-08">We’ve applied this visual storytelling to different formats; for print, video, editorial, blogs, social media, PDFs, presentations, and microsites.</p>
             </Accordion>
             <Accordion titleButton="How do we do it">
-              <p className="typography-08">These projects can take different forms, such as telling explanatory stories with illustration, enabling users to explore and find their own stories within interactive experiences, or using animation and documentary filmmaking to guide the audience through a particularly complex subject. Other projects require the combination of both explanatory and exploratory approaches to meet the needs of different users.</p>
-              <p className="typography-08">We’ve applied this visual storytelling to different formats; for print, video, editorial, blogs, social media, PDFs, presentations, and microsites.</p>
+              <p className="typography-08">Using specialized expertise from the collective in fields such as data science, 3D, video, design and development we've produced enhanced editorial experiences that provide clarity in complexity across a range of industries and social issues.</p>
+              <p className="typography-08">We make connections between disciplines and issues in unconventional ways to increase interdisciplinary understanding.</p>
+              <p className="typography-08">We typically separate projects into a few stages based on the format, as a small team we move forward without information loss through heavy handoffs between phases.</p>
             </Accordion>
           </PopupModule>
         </div>
@@ -40,11 +42,11 @@ export default function Expertise({ ...props }) {
             </li>
             <li className="client">
               <GraphIcon className="graph-icon" />
-              <p className="typography-08">They need to visualize complex information, whether in reports or presentations.</p>
+              <p className="typography-08">They need to find and communicate the stories in their data, no matter the format.</p>
             </li>
             <li className="client">
               <GlobeIcon className="globe-icon" />
-              <p className="typography-08">They need to visualize complex information, whether in reports or presentations.</p>
+              <p className="typography-08">They want an explorable or explanatory web experience.</p>
             </li>
           </ul>
         </div>
