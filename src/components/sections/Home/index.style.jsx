@@ -55,7 +55,7 @@ export const HomeStyle = styled.div`
         }
         svg {
           opacity: 0;
-          transform: rotate3D(0,0,1, -189deg);
+          transform: translate3D(-50%, -50%, 0) rotate3D(0,0,1, -189deg);
         }
       }
     }

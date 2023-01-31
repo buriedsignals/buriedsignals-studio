@@ -46,7 +46,7 @@ export default function Home({ ...props }) {
         timeline.to(document.querySelector('.header'), 0.5, { opacity: 1, ease: Sine.easeIn });
         timeline.to(templateRef.current.querySelector('.visualization-popup .open-button-container-popup .circle-after'), 0.45, { scale: 1, ease: Power2.easeOut }, '+=0.25');
         timeline.to(templateRef.current.querySelector('.visualization-popup .open-button-container-popup .circle-before'), 0.45, { scale: 1, ease: Power2.easeOut }, '-=0.25');
-        timeline.to(templateRef.current.querySelector('.visualization-popup .open-button-container-popup svg'), 0.5, { opacity: 1, rotation: 0, ease: Sine.easeOut }, '-=0.15');      
+        timeline.to(templateRef.current.querySelector('.visualization-popup .open-button-container-popup svg'), 0.5, { opacity: 1, x: '-50%', y: '-50%', rotation: 0, ease: Sine.easeOut }, '-=0.15');      
         timeline.to(templateRef.current.querySelector('.visualization-popup .open-button-container-popup p'), 0.5, { x: 0, opacity: 1, ease: Sine.easeIn }, '-=0.15');
       }
     }, 100);

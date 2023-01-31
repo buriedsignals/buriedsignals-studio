@@ -88,8 +88,8 @@ export default function Popup({ children, className = '', titleButton, callBackB
       )
       const timeline = new gsap.timeline()
       timeline.to(icon, 0.2, { 
-        x: -((Math.sin(angle) * hypotenuse) / 2),
-        y: -((Math.cos(angle) * hypotenuse) / 2)
+        x: -((Math.sin(angle) * hypotenuse) / 2) - iconBounding.width / 2,
+        y: -((Math.cos(angle) * hypotenuse) / 2) - iconBounding.height / 2
       })
     }
   }
