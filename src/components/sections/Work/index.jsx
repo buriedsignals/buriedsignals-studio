@@ -57,6 +57,7 @@ const projects = [
     }
   },
   {
+    link: "https://www.youtube.com/watch?v=IhYN0Ayo0i0",
     name: "Wallrunners of Gaza",
     infos: {
       description: "Web documentary about the history of parkour in Gaza",
