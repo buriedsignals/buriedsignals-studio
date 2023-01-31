@@ -22,7 +22,7 @@ const image = url + 'images/img-meta.jpg'
 function App({ Component, pageProps }) {
   // Nodes
   const breakpoints = createTheme({
-    sm: "400px",
+    xs: "400px",
     sm: "700px",
     md: "955px",
     lg: "1175px",

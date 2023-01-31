@@ -50,6 +50,9 @@ export const WorkStyle = styled.div`
         ${down('md')} {
           padding: 15px 25px 15px 10px;
         }
+        ${down('xs')} {
+          padding: 15px 0;
+        }
         .datas {
           display: flex;
           flex-wrap: wrap;

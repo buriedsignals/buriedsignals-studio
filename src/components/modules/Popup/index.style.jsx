@@ -110,7 +110,7 @@ export const PopupStyle = styled.div`
       pointer-events: none;
       transition: all 1s linear;
       z-index: 3;
-      ${down('sm')} {
+      ${down('xs')} {
         min-height: 100% !important;
         height: 100%;
       }
@@ -121,7 +121,7 @@ export const PopupStyle = styled.div`
         color: var(--color-white);
       }
       .container-module-large {
-        ${down('sm')} {
+        ${down('xs')} {
           height: 100%;
         }
       }
@@ -136,7 +136,7 @@ export const PopupStyle = styled.div`
           padding: 80px 0;
           margin: 0 auto;
         }
-        ${down('sm')} {
+        ${down('xs')} {
           height: 100%;
           padding: 70px 0;
           // justify-content: flex-start;

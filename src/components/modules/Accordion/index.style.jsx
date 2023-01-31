@@ -30,18 +30,18 @@ export const AccordionStyle = styled.div`
       ${down('md')} {
         padding: 10px 0 8px;
       }
-      ${down('sm')} {
+      ${down('xs')} {
         font-size: 25px;
       }
       svg {
         &.letter-w {
-          ${down('sm')} {
+          ${down('xs')} {
             width: 32px;
             height: 22px;
           }
         } 
         &.letter-h {
-          ${down('sm')} {
+          ${down('xs')} {
             width: 24px;
             height: 22px;
           }
@@ -78,7 +78,7 @@ export const AccordionStyle = styled.div`
       ${down('md')} {
         padding-bottom: 15px;
       }
-      ${down('sm')} {
+      ${down('xs')} {
         font-size: 14px;
       }
     }
