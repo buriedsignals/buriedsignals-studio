@@ -10,7 +10,6 @@ import { useRouter } from "next/router";
 
 export default function Header() {
   const router = useRouter()
-  console.log(router.pathname !== "/privacy" && router.pathname !== "/notice" || router.pathname !== "/terms")
   return (
     <HeaderStyle className={ `header ${ router.pathname !== "/privacy" && router.pathname !== "/notice" && router.pathname !== "/terms" ? "is-hide" : "" }` }>
       { useBreakpoint(down('md')) ?

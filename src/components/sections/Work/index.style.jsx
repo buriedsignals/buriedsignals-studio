@@ -8,9 +8,12 @@ export const WorkStyle = styled.div`
   }
   h2 {
     padding: 120px 0 65px;
+    ${down('md')} {
+      padding: 120px 0 35px;
+    }
   }
   .projects {
-    padding: 0 60px 30px;
+    padding: 0 0 30px;
     ${down('md')} {
       padding: 0 0 30px;
     }
@@ -44,6 +47,9 @@ export const WorkStyle = styled.div`
         padding: 25px 47px 25px 20px;
         color: var(--color-black);
         transition: all .35s cubic-bezier(0.12, 0, 0.39, 0);
+        ${down('md')} {
+          padding: 15px 25px 15px 10px;
+        }
         .datas {
           display: flex;
           flex-wrap: wrap;
@@ -85,7 +91,7 @@ export const WorkStyle = styled.div`
           transition: transform 0.2s ease;
           pointer-events: none;
         }
-        &:hover {
+        &.is-hover {
           transition: all .35s cubic-bezier(0.12, 0, 0.39, 0);
           p {
             color: var(--color-white);

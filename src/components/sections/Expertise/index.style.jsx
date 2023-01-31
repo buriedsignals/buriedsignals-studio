@@ -9,8 +9,8 @@ export const ExpertiseStyle = styled.div`
     justify-content: center;
     padding-top: 150px;
     ${down('md')} {
-      align-items: flex-end;
-      width: fit-content;
+      align-items: flex-start;
+      width: 100%;
     }
     .studio-container {
       max-width: 498px;
@@ -18,8 +18,9 @@ export const ExpertiseStyle = styled.div`
         max-width: 100%;
       }
       p {
-        padding: 35px 0 0 68px;
+        padding: 35px 0 0 0;
         ${down('md')} {
+          max-width: 498px;
           padding: 35px 0 80px;
         }
       }
@@ -35,7 +36,7 @@ export const ExpertiseStyle = styled.div`
         }
         &.open-button-container-popup {
           ${down('md')} {
-            bottom: -30px !important; 
+            bottom: -80px !important; 
           }
         }
         &.close-button-container-popup {

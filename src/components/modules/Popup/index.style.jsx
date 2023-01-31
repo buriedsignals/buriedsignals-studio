@@ -38,6 +38,9 @@ export const PopupStyle = styled.div`
           transition: width 0.25s ease, height 0.25s ease;
         }
         svg {
+          position: absolute;
+          top: 50%; left: 50%;
+          transform: translate3D(-50%, -50%, 0);
           pointer-events: none;
           ${down('md')} {
             width: 22.5px;
@@ -88,8 +91,7 @@ export const PopupStyle = styled.div`
           background: var(--color-beige);
         }
         svg {
-          position: relative;
-          transform: rotate3D(0, 0, 1, 45deg);
+          transform: translate3D(-50%, -50%, 0) rotate3D(0, 0, 1, 45deg);
           z-index: 2;
         }
       }
@@ -108,11 +110,20 @@ export const PopupStyle = styled.div`
       pointer-events: none;
       transition: all 1s linear;
       z-index: 3;
+      ${down('sm')} {
+        min-height: 100% !important;
+        height: 100%;
+      }
       .no-animation-popup & {
         transition: initial;
       }
       p, h2 {
         color: var(--color-white);
+      }
+      .container-module-large {
+        ${down('sm')} {
+          height: 100%;
+        }
       }
       .children-container-popup {
         display: flex;
@@ -124,6 +135,11 @@ export const PopupStyle = styled.div`
         ${down('md')} {
           padding: 80px 0;
           margin: 0 auto;
+        }
+        ${down('sm')} {
+          height: 100%;
+          padding: 70px 0;
+          // justify-content: flex-start;
         }
       }
     }

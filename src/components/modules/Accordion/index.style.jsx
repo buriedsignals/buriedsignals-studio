@@ -30,6 +30,23 @@ export const AccordionStyle = styled.div`
       ${down('md')} {
         padding: 10px 0 8px;
       }
+      ${down('sm')} {
+        font-size: 25px;
+      }
+      svg {
+        &.letter-w {
+          ${down('sm')} {
+            width: 32px;
+            height: 22px;
+          }
+        } 
+        &.letter-h {
+          ${down('sm')} {
+            width: 24px;
+            height: 22px;
+          }
+        } 
+      }
     }
     & > svg {
       margin-right: 20px;
@@ -48,7 +65,7 @@ export const AccordionStyle = styled.div`
     // display: none;
     max-height: 0px;
     overflow: hidden;
-    transition: all .75s cubic-bezier(0.45, 0, 0.55, 1);
+    transition: max-height .75s cubic-bezier(0.45, 0, 0.55, 1);
     .children-container {
       padding: 35px 16px 0 68px;
       color: var(--color-white);
@@ -61,11 +78,14 @@ export const AccordionStyle = styled.div`
       ${down('md')} {
         padding-bottom: 15px;
       }
+      ${down('sm')} {
+        font-size: 14px;
+      }
     }
     &.is-active {
       // display: block;
       max-height: 1000px;
-      transition: all 2s cubic-bezier(0.45, 0, 0.55, 1) 0.75s;
+      transition: max-height 2s cubic-bezier(0.45, 0, 0.55, 1) 0.75s;
     }
   }
 `

@@ -154,11 +154,14 @@ button {
 
 html {
   scroll-behavior: smooth;
+  min-height: 100% !important;
+  height: 100%;
 }
 
 body {
   min-width: 100vw;
-  min-height: 100vh;
+  min-height: 100% !important;
+  height: 100%;
   padding: 0;
   margin: 0;
   background-color: var(--color-beige);

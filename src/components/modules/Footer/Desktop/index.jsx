@@ -15,7 +15,7 @@ export default function FooterDesktop() {
             <LogoIcon />
           </a>
         </Link>
-        <a href="https://twitter.com/NuancedStudio" className="twitter typography-10" target="_blank" rel="noopener noreferrer">Follow us on <TwitterIcon /></a>
+        <a href="https://twitter.com/NuancedStudio" className="twitter typography-10" target="_blank" rel="noopener noreferrer"><span>Follow us on</span> <TwitterIcon /></a>
       </div>
       <div className="legals">        
         <p className="typography-10">© 2023 Nuanced Studio.</p>

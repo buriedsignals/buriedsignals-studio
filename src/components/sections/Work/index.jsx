@@ -12,50 +12,48 @@ import Section from "@/components/modules/Section"
 
 const projects = [
   {
-    link: "https://www.google.fr",
-    name: "Hello sunshine",
+    link: "https://linesofcontrol.com/",
+    name: "Lines of Control",
     infos: {
-      description: "Blip blop",
-      provider: "The client"
+      description: "An interactive web documentary in partnership with",
+      provider: "Stand With Kashmir"
     }
   },
   {
-    link: "https://www.google.fr",
-    name: "The Yemen Foundation",
+    link: "https://yementribute.com/",
+    name: "The Yemen Tribute",
     infos: {
-      description: "An interactive experience for",
-      provider: "Qatar Foundation"
+      description: "Visualising investigative data with mapping and editorial alongside",
+      provider: "The Yemen Foundation"
     }
   },
   {
-    link: "https://www.google.fr",
-    name: "The Yemen Foundation",
+    name: "Talent Search",
     infos: {
-      description: "An interactive experience for",
-      provider: "Qatar Foundation"
+      description: "Information design and data visualization in a PDF report for",
+      provider: "Talent Acquisition Group"
     }
   },
   {
-    link: "https://www.google.fr",
-    name: "The Yemen Foundation",
+    link: "https://gather.seedsofpeace.org/",
+    name: "We GATHER",
     infos: {
-      description: "An interactive experience for",
-      provider: "Qatar Foundation"
+      description: "Branding, website design and film production for",
+      provider: "GATHER"
     }
   },
   {
-    link: "https://www.google.fr",
-    name: "The Yemen Foundation",
+    name: "QF in Numbers",
     infos: {
-      description: "An interactive experience for",
-      provider: "Qatar Foundation"
+      description: "Information design and data visualization for",
+      provider: "the Qatar Foundation"
     }
   },
   {
-    name: "Hello sunshine",
+    name: "IPO Visualizations",
     infos: {
-      description: "An interactive experience for",
-      provider: "Qatar Foundation"
+      description: "Visual data animations for an IPO roadshow video by",
+      provider: "Aleph Group"
     }
   }
 ]
@@ -65,14 +63,16 @@ export default function Work({ ...props }) {
   // Handlers
   const onMouseEnter = (e, index) => {
     e.target.style.background = colors[index]
+    e.target.classList.add('is-hover')
   }
   const onMouseLeave = (e) => {
     e.target.style.background = "inherit"
+    e.target.classList.remove('is-hover')
   }
   return (
     <Section>
       <WorkStyle { ...props } id="work" className="container-module-large">
-        <TitleFirstIconText>What we have done</TitleFirstIconText>
+        <TitleFirstIconText>What we've done</TitleFirstIconText>
         <ul className="projects">
           { projects.map((project, index) => {
             return (

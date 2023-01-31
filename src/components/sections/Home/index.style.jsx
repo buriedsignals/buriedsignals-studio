@@ -6,6 +6,9 @@ export const HomeStyle = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
+  ${down('sm')} {
+    height: calc(100vh - 100px) !important;
+  }
   h1 {
     max-width: 875px;
     opacity: 0;
