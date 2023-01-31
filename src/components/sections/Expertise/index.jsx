@@ -20,7 +20,7 @@ export default function Expertise({ ...props }) {
             <TitleFirstIconText letterColored={ true }>What we do</TitleFirstIconText>
             <p className="typography-08">As a film production, design and development studio that specializes in information vizualisation, we combine the dynamic and interactive capabilities of technology with design to create unique narratives or share existing insights about our client’s data with wider audiences.</p>
           </div>
-          <PopupModule className="studio-popup" titleButton="Read more about the studio">
+          <PopupModule className="studio-popup" titleButton="How we work">
             <Accordion titleButton="What we produce" opened={ true }>
               <p className="typography-08">Our projects come in many shapes and sizes. Whether it is telling explanatory stories with illustration, enabling users to explore and find their own stories within interactive experiences or using animation and documentary filmmaking to guide audiences through complex subjects.</p>
               <p className="typography-08">Sometimes projects require the combination of both explanatory and exploratory approaches to meet the needs of different users.</p>

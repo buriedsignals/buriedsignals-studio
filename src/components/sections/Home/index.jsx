@@ -63,7 +63,7 @@ export default function Home({ ...props }) {
       <HomeStyle ref={templateRef} { ...props } className="container-module-large">      
         <h1 ref={titleRef} className="typography-05">Nuanced is a film and interactive design studio within <a href="https://buriedsignals.com/" target="_blank" rel="noopener noreferrer"><SpanGradientText hover={ true }>Buried&nbsp;Signals</SpanGradientText></a>.<br/><br/>We specialize in <button onClick={ onClickButton }><SpanGradientText hover={ true } revert={ true }>information&nbsp;design</SpanGradientText></button> and <button onClick={ onClickButton }><SpanGradientText hover={ true } revert={ true }>narrative&nbsp;visualization</SpanGradientText></button>.</h1>
         <PopupModule className="visualization-popup" titleButton="What is visualization?" callBackButtonPopup={ buttonPopup }>
-          <TitleFirstIconText letterColored={ false }>What is visualitation?</TitleFirstIconText>
+          <TitleFirstIconText letterColored={ false }>What is visualization?</TitleFirstIconText>
           <div className="description-visualization-popup">
             <p className="typography-08">Visualization is a process that involves turning complex information or data into visual representations, such as charts, graphs, and maps, in order to better understand and communicate insights.</p>
             <br />
