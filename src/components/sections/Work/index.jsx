@@ -55,6 +55,13 @@ const projects = [
       description: "Visual data animations for an IPO roadshow video by",
       provider: "Aleph Group"
     }
+  },
+  {
+    name: "Wallrunners of Gaza",
+    infos: {
+      description: "Web documentary about the history of parkour in Gaza",
+      provider: "Red Bull"
+    }
   }
 ]
 
