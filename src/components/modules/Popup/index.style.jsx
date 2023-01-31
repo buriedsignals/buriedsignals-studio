@@ -56,7 +56,7 @@ export const PopupStyle = styled.div`
         }
       }
       p {
-        max-width: 145px;
+        width: 145px;
         white-space: break-spaces;
         text-transform: uppercase;
         ${down('md')} {
