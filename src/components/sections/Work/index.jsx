@@ -39,7 +39,7 @@ const projects = [
     name: "We GATHER",
     infos: {
       description: "Branding, website design and film production for",
-      provider: "GATHER"
+      provider: "GATHER Foundation"
     }
   },
   {
@@ -50,9 +50,9 @@ const projects = [
     }
   },
   {
-    name: "IPO Visualizations",
+    name: "IPO Infoviz",
     infos: {
-      description: "Visual data animations for an IPO roadshow video by",
+      description: "Creative direction and information visualization for an IPO roadshow video by",
       provider: "Aleph Group"
     }
   },
