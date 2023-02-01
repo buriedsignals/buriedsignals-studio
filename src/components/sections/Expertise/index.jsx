@@ -18,7 +18,7 @@ export default function Expertise({ ...props }) {
         <div className="expertise-container container-module-large">
           <div className="studio-container">
             <TitleFirstIconText letterColored={ true }>What we do</TitleFirstIconText>
-            <p className="typography-08">As a film production, design and development studio that specializes in information vizualisation, we combine the dynamic and interactive capabilities of technology with design to create unique narratives or share existing insights about our client’s data with wider audiences.</p>
+            <p className="typography-08">As a film production, design and development studio that specializes in information vizualisation, we combine the interactive capabilities of technology with media and design to create unique narratives or share insights about our client’s data with a larger audience.</p>
           </div>
           <PopupModule className="studio-popup" titleButton="How we work">
             <Accordion titleButton="What we produce" opened={ true }>
