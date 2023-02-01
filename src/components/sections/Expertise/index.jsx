@@ -18,7 +18,7 @@ export default function Expertise({ ...props }) {
         <div className="expertise-container container-module-large">
           <div className="studio-container">
             <TitleFirstIconText letterColored={ true }>What we do</TitleFirstIconText>
-            <p className="typography-08">As a film production, design and development studio that specializes in information vizualisation, we combine the interactive capabilities of technology with media and design to create unique narratives or share insights about our client’s data with a larger audience.</p>
+            <p className="typography-08">As a film production and design studio that specializes in information vizualisation, we combine the interactive capabilities of technology with media to create unique narratives or share insights about our clients data with a larger audience.</p>
           </div>
           <PopupModule className="studio-popup" titleButton="How we work">
             <Accordion titleButton="What we produce" opened={ true }>
@@ -38,7 +38,7 @@ export default function Expertise({ ...props }) {
           <ul className="clients">
             <li className="client">
               <BubbleIcon className="bubble-icon" />
-              <p className="typography-08">They need to visualize complex information, whether in reports or presentations.</p>
+              <p className="typography-08">They need to visualize complex information, whether in reports, video or presentations.</p>
             </li>
             <li className="client">
               <GraphIcon className="graph-icon" />
