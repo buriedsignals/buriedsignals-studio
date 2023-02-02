@@ -45,14 +45,14 @@ const projects = [
   {
     name: "QF in Numbers",
     infos: {
-      description: "Information design and data visualization for",
-      provider: "the Qatar Foundation"
+      description: "Information design and data visualization for Immersive Garden and the",
+      provider: "Qatar Foundation"
     }
   },
   {
-    name: "IPO Infoviz",
+    name: "Investor Presentation Infoviz",
     infos: {
-      description: "Creative direction and information visualization for an IPO roadshow video by",
+      description: "Creative direction and information visualization for an investor video and presentation video by",
       provider: "Aleph Group"
     }
   },
