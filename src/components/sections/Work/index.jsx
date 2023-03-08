@@ -45,20 +45,20 @@ const projects = [
     name: "We GATHER",
     infos: {
       description: "Branding, website design and film production for",
-      provider: "GATHER"
+      provider: "GATHER Foundation"
     }
   },
   {
     name: "QF in Numbers",
     infos: {
-      description: "Information design and data visualization for",
-      provider: "the Qatar Foundation"
+      description: "Information design and data visualization for Immersive Garden and the",
+      provider: "Qatar Foundation"
     }
   },
   {
-    name: "IPO Visualizations",
+    name: "Investor Presentation Infoviz",
     infos: {
-      description: "Visual data animations for an IPO roadshow video by",
+      description: "Creative direction and information visualization for an investor video and presentation video by",
       provider: "Aleph Group"
     }
   },

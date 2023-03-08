@@ -20,7 +20,7 @@ export default function Expertise({ ...props }) {
         <div className="expertise-container container-module-large">
           <div className="studio-container">
             <TitleFirstIconText className="test" letterColored={ true }>What we do</TitleFirstIconText>
-            <p className="typography-08 test">As a film production, design and development studio that specializes in information vizualisation, we combine the dynamic and interactive capabilities of technology with design to create unique narratives or share existing insights about our client’s data with wider audiences.</p>
+            <p className="typography-08 test">As a film production and design studio that specializes in information vizualisation, we combine the interactive capabilities of technology with media to create unique narratives or share insights about our clients data with a larger audience.</p>
           </div>
           <PopupModule className="studio-popup" titleButton="How we work">
             <Accordion titleButton="What we produce" opened={ true }>
@@ -42,7 +42,7 @@ export default function Expertise({ ...props }) {
           <ul className="clients">
             <li className="client">
               <Lottie animationData={ BubbleLottie } />
-              <p className="typography-08 test">They need to visualize complex information, whether in reports or presentations.</p>
+              <p className="typography-08 test">They need to visualize complex information, whether in reports, video or presentations.</p>
             </li>
             <li className="client">
               <Lottie animationData={ GraphLottie } />
