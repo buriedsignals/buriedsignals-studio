@@ -146,7 +146,7 @@ export default function Work({ ...props }) {
           }) }
         </ul>
         <div className="trust">
-          <h3 className="typography-04">They trust us</h3>
+          <h3 className="typography-04">They trusted us</h3>
           <ul className="clients">
             { clients.map((client, index) => {
               return (

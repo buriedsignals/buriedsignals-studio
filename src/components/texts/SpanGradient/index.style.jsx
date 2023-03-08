@@ -142,7 +142,7 @@ export const SpanGradientStyle = styled.span`
           display: block;
           width: 100%;
           height: 2px;
-          background: linear-gradient(90deg, var(--color-green02) 0%, var(--color-green03) 50%, var(--color-beige) 51%, var(--color-beige) 100%);
+          background: linear-gradient(90deg, var(--color-green02) 0%, var(--color-green03) 50%, var(--color-black) 51%, var(--color-black) 100%);
           background-size: 300% 100%;
           background-position: 100% 0;
           transition: background .95s cubic-bezier(0.61, 1, 0.88, 1);
