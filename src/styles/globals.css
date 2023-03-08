@@ -404,8 +404,8 @@ button, a {
   position: absolute;
   top: 50%; left: 50%;
   display: block;
-  width: 110%;
-  height: 110%;
+  width: 115%;
+  height: 115%;
   background-color: var(--color-beige);
   transform: translate3d(-50%, -50%, 0);
   z-index: -1;

@@ -8,11 +8,17 @@ export const HomeTemplateStyle = styled.div`
     // background-size: 50px 50px;
   }
   .canvasParent {
+    &.is-canvas {
+      .toto {
+        display: block;
+      }
+    }
     .toto {
       position: absolute;
       top: 0; left: 0;
       width: 100vw;
       height: 100vh;
+      display: none;
     }
   }
 `
