@@ -6,11 +6,13 @@ export const HomeStyle = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
+  z-index: 1;
   ${down('xs')} {
     height: calc(100vh - 100px) !important;
   }
   h1 {
-    max-width: 875px;
+    position: relative;
+    max-width: 922px;
     opacity: 0;
     .line {
       display: inline-block;

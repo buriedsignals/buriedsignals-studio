@@ -99,7 +99,7 @@ export default function Popup({ children, className = '', titleButton, callBackB
   }
   return (
     <PopupStyle { ...props } className={ `${ className } popup ${ opened ? ' is-open' : '' }` }>
-      <div className="open-button-container-popup button-container-popup">
+      <div className="open-button-container-popup button-container-popup test">
         <button className="open-button-popup button-popup" onClick={ onClickButton } onMouseMove={ onMouseMoveButton } onMouseLeave={ onMouseLeaveButton }>
           <div className="circle circle-before" />
           <div className="circle circle-after" />

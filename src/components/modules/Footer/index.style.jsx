@@ -11,7 +11,8 @@ export const FooterStyle = styled.div`
       display: block;
       width: 100%;
       height: 1px;
-      background-color: var(--color-green02);
+      background-color: var(--color-green02);    
+      z-index: 1;
     }
   }
 `

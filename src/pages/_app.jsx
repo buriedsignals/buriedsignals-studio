@@ -17,7 +17,7 @@ const url = 'https://www.nuanced.studio/'
 const description = "A film and interactive design studio specializing in information visualization."
 const keywords = 'dataviz, information, design, visualisation, narrative, interactive, visual, journalism, awards, resources, insights, courses, community, data'
 const author = 'Nuanced'
-const image = url + 'images/img-meta.jpg'
+const image = url + 'images/img-meta.jpeg'
 
 function App({ Component, pageProps }) {
   // Nodes

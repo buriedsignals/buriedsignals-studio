@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { down } from "styled-breakpoints";
 
 export const WorkStyle = styled.div`
-  padding-top: 100px;
+  padding-top: 0px;
   ${down('md')} {
     padding-top: 0;
   }
@@ -11,6 +11,28 @@ export const WorkStyle = styled.div`
     ${down('md')} {
       padding: 120px 0 35px;
     }
+  }
+  .trust h3 {
+    padding-top: 120px;
+    text-align: center;
+  }
+  .clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    column-gap: 60px;
+    padding: 60px 0 30px;
+    ${down('md')} {
+      flex-direction: column;
+    }
+    .client {
+      width: auto;
+      img {
+        width: 100%;
+      }
+    } 
   }
   .projects {
     padding: 0 0 30px;
@@ -25,7 +47,7 @@ export const WorkStyle = styled.div`
         display: block;
         width: 100%;
         height: 1px;
-        background-color: var(--color-black);
+        background-color: var(--color-green02);
       }
       &::before {
         top: 0;

@@ -12,6 +12,9 @@ export const HeaderStyle = styled.div`
     align-items: center;
     width: 100%;
     padding-top: 40px;
+    .logo {
+      position: relative;
+    }
     .pages {
       display: flex;
       column-gap: 47px;

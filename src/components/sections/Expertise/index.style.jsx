@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { down } from "styled-breakpoints";
 
 export const ExpertiseStyle = styled.div`
+  position: relative;
+  padding-bottom: 100px;
+  z-index: 1;
   .expertise-container {
     position: relative;
     display: flex;
@@ -18,6 +21,7 @@ export const ExpertiseStyle = styled.div`
         max-width: 100%;
       }
       p {
+        position: relative;
         padding: 35px 0 0 0;
         ${down('md')} {
           max-width: 498px;
@@ -74,9 +78,14 @@ export const ExpertiseStyle = styled.div`
   .client-container {
     padding-top: 100px;
     padding-bottom: 30px;
-    h3 {
-      padding: 100px 0 64px;
+    .title-container {
       text-align: center;
+      h3 {
+        position: relative;
+        display: inline-block;
+        padding: 100px 0 64px;
+        text-align: center;
+      }
     }
     .clients {
       display: flex;
@@ -93,7 +102,11 @@ export const ExpertiseStyle = styled.div`
         justify-content: center;
         align-items: center;
         max-width: 243px;
+        svg {
+          position: relative
+        }
         p {
+          position: relative;
           padding-top: 27px;
           text-align: center;
         }

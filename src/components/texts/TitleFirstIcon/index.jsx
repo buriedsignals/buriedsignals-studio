@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
 import LetterWIcon from "@/components/icons/LetterW"
 import LetterHIcon from "@/components/icons/LetterH"
 
-export default function TitleFirstIcon({ children, letterColored = true, ...props }) {
+export default function TitleFirstIcon({ className, children, letterColored = true, ...props }) {
   // States
   const [letterW, setLetterW] = useState(false)
   const [letterH, setLetterH] = useState(false)
@@ -22,7 +22,7 @@ export default function TitleFirstIcon({ children, letterColored = true, ...prop
     }
   }, [])
   return (
-    <TitleFirstIconStyle className="title-first-icon typography-05">
+    <TitleFirstIconStyle className={ `title-first-icon typography-05 ${className  }` }>
       { letterW && <LetterWIcon colored={ letterColored } /> }
       { letterH && <LetterHIcon colored={ letterColored } /> }
       { sentence }

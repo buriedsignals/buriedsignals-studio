@@ -3,13 +3,15 @@ import { ExpertiseStyle } from "./index.style"
 // Modules
 import PopupModule from "@/components/modules/Popup"
 import Accordion from "@/components/modules/Accordion"
+import Lottie from "@/components/modules/Lottie";
 // Texts
 import TitleFirstIconText from "@/components/texts/TitleFirstIcon"
 // Icons
-import BubbleIcon from "@/components/icons/Bubble"
-import GraphIcon from "@/components/icons/Graph"
-import GlobeIcon from "@/components/icons/Globe"
 import Section from "@/components/modules/Section"
+// Datas
+import BubbleLottie from "../../../../public/datas/target.json"
+import GraphLottie from "../../../../public/datas/text.json"
+import GlobeLottie from "../../../../public/datas/web.json"
 
 export default function Expertise({ ...props }) {
   return (
@@ -17,8 +19,8 @@ export default function Expertise({ ...props }) {
       <ExpertiseStyle { ...props } id="expertise">
         <div className="expertise-container container-module-large">
           <div className="studio-container">
-            <TitleFirstIconText letterColored={ true }>What we do</TitleFirstIconText>
-            <p className="typography-08">As a film production, design and development studio that specializes in information vizualisation, we combine the dynamic and interactive capabilities of technology with design to create unique narratives or share existing insights about our client’s data with wider audiences.</p>
+            <TitleFirstIconText className="test" letterColored={ true }>What we do</TitleFirstIconText>
+            <p className="typography-08 test">As a film production, design and development studio that specializes in information vizualisation, we combine the dynamic and interactive capabilities of technology with design to create unique narratives or share existing insights about our client’s data with wider audiences.</p>
           </div>
           <PopupModule className="studio-popup" titleButton="How we work">
             <Accordion titleButton="What we produce" opened={ true }>
@@ -34,19 +36,21 @@ export default function Expertise({ ...props }) {
           </PopupModule>
         </div>
         <div className="client-container container-module-large">
-          <h3 className="typography-04">Clients turn to us when:</h3>
+          <div className="title-container">
+            <h3 className="typography-04 test">Clients turn to us when:</h3>
+          </div>
           <ul className="clients">
             <li className="client">
-              <BubbleIcon className="bubble-icon" />
-              <p className="typography-08">They need to visualize complex information, whether in reports or presentations.</p>
+              <Lottie animationData={ BubbleLottie } />
+              <p className="typography-08 test">They need to visualize complex information, whether in reports or presentations.</p>
             </li>
             <li className="client">
-              <GraphIcon className="graph-icon" />
-              <p className="typography-08">They need to find and communicate the stories in their data, no matter the format.</p>
+              <Lottie animationData={ GraphLottie } />
+              <p className="typography-08 test">They need to find and communicate the stories in their data, no matter the format.</p>
             </li>
             <li className="client">
-              <GlobeIcon className="globe-icon" />
-              <p className="typography-08">They want an explorable or explanatory web experience.</p>
+              <Lottie animationData={ GlobeLottie } />
+              <p className="typography-08 test">They want an explorable or explanatory web experience.</p>
             </li>
           </ul>
         </div>

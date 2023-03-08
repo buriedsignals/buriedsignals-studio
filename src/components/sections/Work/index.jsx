@@ -9,6 +9,12 @@ import TitleFirstIconText from "@/components/texts/TitleFirstIcon"
 // Icons
 import Arrow02Icon from "@/components/icons/Arrow02"
 import Section from "@/components/modules/Section"
+import OnuIcon from "@/components/icons/Onu"
+import QuatarFondationIcon from "@/components/icons/QuatarFondation"
+import RedbullIcon from "@/components/icons/Redbull"
+import OfpeaceIcon from "@/components/icons/Ofpeace"
+import AlephIcon from "@/components/icons/Aleph"
+import TagIcon from "@/components/icons/Tag"
 
 const projects = [
   {
@@ -66,6 +72,39 @@ const projects = [
   }
 ]
 
+const clients = [
+  {
+    link: "https://linesofcontrol.com/",
+    icon: "./images/onu.png",
+    widthIcon: "74px"
+  },
+  {
+    link: "https://linesofcontrol.com/",
+    icon: "./images/quatarFondation.png",
+    widthIcon: "191px"
+  },
+  {
+    link: "https://linesofcontrol.com/",
+    icon: "./images/redbull.png",
+    widthIcon: "101px"
+  },
+  {
+    link: "https://linesofcontrol.com/",
+    icon: "./images/ofpeace.png",
+    widthIcon: "140px"
+  },
+  {
+    link: "https://linesofcontrol.com/",
+    icon: "./images/aleph.png",
+    widthIcon: "126px"
+  },
+  {
+    link: "https://linesofcontrol.com/",
+    icon: "./images/tag.png",
+    widthIcon: "166px"
+  }
+]
+
 export default function Work({ ...props }) {
   const colors = useGradientColor("#60d09f", "#377A5D", projects.length)
   // Handlers
@@ -78,7 +117,7 @@ export default function Work({ ...props }) {
     e.target.classList.remove('is-hover')
   }
   return (
-    <Section>
+    <Section className="section-dark">
       <WorkStyle { ...props } id="work" className="container-module-large">
         <TitleFirstIconText>What we've done</TitleFirstIconText>
         <ul className="projects">
@@ -106,6 +145,20 @@ export default function Work({ ...props }) {
             )
           }) }
         </ul>
+        <div className="trust">
+          <h3 className="typography-04">They trust us</h3>
+          <ul className="clients">
+            { clients.map((client, index) => {
+              return (
+                <li className="client" key={ index }>
+                  <div className="datas-container">
+                    <img src={ client.icon } style={{ maxWidth: client.widthIcon }} />
+                  </div>
+                </li>
+              )
+            }) }
+          </ul>
+        </div>
       </WorkStyle>
     </Section>
   )
