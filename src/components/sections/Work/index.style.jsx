@@ -25,10 +25,13 @@ export const WorkStyle = styled.div`
     column-gap: 60px;
     padding: 60px 0 30px;
     ${down('md')} {
-      flex-direction: column;
+      // flex-direction: column;
     }
     .client {
       width: auto;
+      ${down('md')} {
+        width: 35%;
+      }
       img {
         width: 100%;
       }

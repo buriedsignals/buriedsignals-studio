@@ -35,7 +35,7 @@ export default function Canvas({ ...props }) {
     setContext(canvasRef.current.getContext('2d'))
   }, [canvasRef.current])
 
-  const mousePos = useRef({ x: 0, y: 0, _x: 0, _y: 0 });
+  const mousePos = useRef({ x: -60, y: -60, _x: -60, _y: -60 });
   const requestRef = useRef();
   const previousTimeRef = useRef();
   
@@ -97,6 +97,10 @@ export default function Canvas({ ...props }) {
   const redraw = (mouse) => {
     canvasRef.current.width = canvasRef.current.offsetWidth;
     canvasRef.current.height = canvasRef.current.offsetHeight;
+    context.beginPath()
+    context.fillStyle = "#F5F2ED";
+    context.fillRect(0,0,canvasRef.current.width,canvasRef.current.height);
+    context.closePath()
     for (var x = 0; x <= window.innerWidth; x += 50) {
       for (var y = 0; y <= window.innerHeight; y += 50) {
         const distX = (x + 15) - mouse._x
@@ -127,7 +131,7 @@ export default function Canvas({ ...props }) {
       }
     }
     const gradient = context.createRadialGradient(mouse._x, mouse._y, 30, mouse._x, mouse._y, 109);
-    gradient.addColorStop(0.2, "#F5F2ED80");
+    gradient.addColorStop(0.5, "#F5F2ED1A");
     gradient.addColorStop(0.9, "#F5F2ED");
     gradient.addColorStop(1, "#F5F2ED");
     context.fillStyle = gradient;

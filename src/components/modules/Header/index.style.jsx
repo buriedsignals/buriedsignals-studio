@@ -2,7 +2,32 @@ import styled from "styled-components";
 import { down } from "styled-breakpoints";
 
 export const HeaderStyle = styled.div`
+  position: fixed;
+  top: 0; left: 0;
   width: 100vw;
+  z-index: 30;
+  opacity: 0;
+  top: -66px;
+  transform: translateY(-10px);
+  transition: top 0.25s ease;
+  &.is-stick {
+    top: 0;
+    transition: top 0.25s ease;
+  }
+  ${down('md')} {
+    top: -56px;
+    transition: top 0.25s ease;
+  }
+  .theme-light & {
+    & > div {
+      background: var(--color-beige);
+    }
+  }
+  .theme-dark & {
+    & > div {
+      background: var(--color-black);
+    }
+  }
   &.header-light {
     .container {
       .pages {

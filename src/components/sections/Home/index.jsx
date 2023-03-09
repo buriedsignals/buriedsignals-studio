@@ -6,11 +6,14 @@ import PopupModule from "@/components/modules/Popup"
 import SpanGradientText from "@/components/texts/SpanGradient"
 import TitleFirstIconText from "@/components/texts/TitleFirstIcon"
 
-import gsap, { Expo, Power2, Power4, Sine } from 'gsap';
+import gsap, { Circ, Expo, Power2, Power4, Sine } from 'gsap';
 import SplitText from '@/scripts/SplitText';
 import { useEffect, useRef, useState } from "react";
 import Section from "@/components/modules/Section";
 import useStore from "@/hooks/useStore";
+import { CustomEase } from "gsap/dist/CustomEase";
+
+gsap.registerPlugin(CustomEase);
 gsap.registerPlugin(SplitText);
 
 export default function Home({ ...props }) {
@@ -39,13 +42,13 @@ export default function Home({ ...props }) {
         // });
         lines.forEach((line, i) => {
           if (line.textContent.length != 1) {
-            timeline.to(line.querySelectorAll('.word'), 0.5, { y: 0, ease: Sine.easeOut }, i !== 0 ? '-=0.325' : '');
+            timeline.to(line.querySelectorAll('.word'), 0.75, { y: 0, ease: CustomEase.create("custom", "0.25, 0.1, 0.74, 0.91") }, i !== 0 ? '-=0.55' : '');
           }
         });
         timeline.to(titleRef.current.querySelectorAll('.underline'), 1, { width: '100%', opacity: 1, ease: Expo.easeInOut });
-        timeline.to(document.querySelector('.header'), 0.5, { opacity: 1, ease: Sine.easeIn });
-        timeline.to(templateRef.current.querySelector('.visualization-popup .open-button-container-popup .circle-after'), 0.45, { scale: 1, ease: Power2.easeOut }, '+=0.25');
-        timeline.to(templateRef.current.querySelector('.visualization-popup .open-button-container-popup .circle-before'), 0.45, { scale: 1, ease: Power2.easeOut }, '-=0.25');
+        timeline.to(document.querySelector('.header'), 0.5, { opacity: 1, y: 0, ease: CustomEase.create("custom", "0.25, 0.1, 0.74, 0.91") }, '-=1.');
+        timeline.to(templateRef.current.querySelector('.visualization-popup .open-button-container-popup .circle-after'), 0.45, { scale: 1, ease: Power2.easeOut }, '-=0.65');
+        timeline.to(templateRef.current.querySelector('.visualization-popup .open-button-container-popup .circle-before'), 0.45, { scale: 1, ease: Power2.easeOut }, '-=0.65');
         timeline.to(templateRef.current.querySelector('.visualization-popup .open-button-container-popup svg'), 0.5, { opacity: 1, x: '-50%', y: '-50%', rotation: 0, ease: Sine.easeOut }, '-=0.15');      
         timeline.to(templateRef.current.querySelector('.visualization-popup .open-button-container-popup p'), 0.5, { x: 0, opacity: 1, ease: Sine.easeIn }, '-=0.15');
       }

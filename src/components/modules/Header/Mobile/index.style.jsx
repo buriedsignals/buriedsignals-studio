@@ -2,16 +2,13 @@ import styled from "styled-components";
 import { down } from "styled-breakpoints";
 
 export const HeaderStyle = styled.div`
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw;
-  z-index: 30;
   .header-mobile-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding-top: 30px;
+    padding-bottom: 20px;
     .logo, .menu {
       position: relative;
       z-index: 2;
