@@ -7,7 +7,7 @@ export const HeaderStyle = styled.div`
   width: 100vw;
   z-index: 30;
   opacity: 0;
-  top: -66px;
+  top: -90px;
   transform: translateY(-10px);
   transition: top 0.25s ease;
   &.is-stick {
@@ -15,12 +15,17 @@ export const HeaderStyle = styled.div`
     transition: top 0.25s ease;
   }
   ${down('md')} {
-    top: -56px;
+    top: -90px;
     transition: top 0.25s ease;
   }
   .theme-light & {
     & > div {
       background: var(--color-beige);
+    }
+  }
+  .theme-green & {
+    & > div {
+      // background: var(--color-green);
     }
   }
   .theme-dark & {

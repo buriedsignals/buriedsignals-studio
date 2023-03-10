@@ -4,7 +4,6 @@ import { down } from "styled-breakpoints";
 export const ExpertiseStyle = styled.div`
   position: relative;
   padding-bottom: 100px;
-  z-index: 1;
   .expertise-container {
     position: relative;
     display: flex;

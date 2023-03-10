@@ -20,7 +20,7 @@ export default function Expertise({ ...props }) {
         <div className="expertise-container container-module-large">
           <div className="studio-container">
             <TitleFirstIconText className="test" letterColored={ true }>What we do</TitleFirstIconText>
-            <p className="typography-08 test">As a film production and design studio that specializes in information vizualisation, we combine the interactive capabilities of technology with media to create unique narratives or share insights about our clients data with a larger audience.</p>
+            <p className="typography-08">As a film production and design studio that specializes in information vizualisation, we combine the interactive capabilities of technology with media to create unique narratives or share insights about our clients data with a larger audience.</p>
           </div>
           <PopupModule className="studio-popup" titleButton="How we work">
             <Accordion titleButton="What we produce" opened={ true }>
@@ -37,20 +37,20 @@ export default function Expertise({ ...props }) {
         </div>
         <div className="client-container container-module-large">
           <div className="title-container">
-            <h3 className="typography-04 test">Clients turn to us when:</h3>
+            <h3 className="typography-04">Clients turn to us when:</h3>
           </div>
           <ul className="clients">
             <li className="client">
               <Lottie animationData={ BubbleLottie } />
-              <p className="typography-08 test">They need to visualize complex information, whether in reports, video or presentations.</p>
+              <p className="typography-08">They need to visualize complex information, whether in reports, video or presentations.</p>
             </li>
             <li className="client">
               <Lottie animationData={ GraphLottie } />
-              <p className="typography-08 test">They need to find and communicate the stories in their data, no matter the format.</p>
+              <p className="typography-08">They need to find and communicate the stories in their data, no matter the format.</p>
             </li>
             <li className="client">
               <Lottie animationData={ GlobeLottie } />
-              <p className="typography-08 test">They want an explorable or explanatory web experience.</p>
+              <p className="typography-08">They want an explorable or explanatory web experience.</p>
             </li>
           </ul>
         </div>

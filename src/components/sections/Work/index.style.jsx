@@ -33,7 +33,9 @@ export const WorkStyle = styled.div`
         width: 35%;
       }
       img {
+        display: block;
         width: 100%;
+        margin: 0 auto;
       }
     } 
   }

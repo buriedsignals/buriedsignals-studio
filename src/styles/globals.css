@@ -187,6 +187,10 @@ button, a {
   color: var(--color-white);
 }
 
+.theme-green p, .theme-green a {
+  color: var(--color-white);
+}
+
 .section-dark {
   position: relative;
   background-color: var(--color-black);

@@ -25,11 +25,18 @@ export default function Popup({ children, className = '', titleButton, callBackB
     }
     if (!popupOpen) {
       setTimeout(() => {
+        console.log('ok')
         setTheme('light')
+        setTimeout(() => {
+          document.querySelector('.header > div').style.background = ""
+        }, 100)
       }, 1200)
     } else {
       setTimeout(() => {
-        setTheme('dark')
+        document.querySelector('.header > div').style.background = "inherit"
+      }, 1200)
+      setTimeout(() => {
+        setTheme('green')
       }, 1000)
     }
   }, [popupOpen])
@@ -51,7 +58,7 @@ export default function Popup({ children, className = '', titleButton, callBackB
       }, 1200)
     } else {
       setTimeout(() => {
-        setTheme('dark')
+        setTheme('green')
       }, 1000)
     }
     const timeline = new gsap.timeline()

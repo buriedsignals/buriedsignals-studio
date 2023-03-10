@@ -33,7 +33,7 @@ export default function HeaderMobile() {
     setMenuOpen(!menuOpen)
     if (menuOpen) {
       if (popupOpen) {
-        setTheme('dark')
+        setTheme('green')
       } else {
         setTheme('light')
       }
