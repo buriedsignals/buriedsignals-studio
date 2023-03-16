@@ -74,34 +74,34 @@ const projects = [
 
 const clients = [
   {
-    link: "https://linesofcontrol.com/",
-    icon: "./images/onu.png",
-    widthIcon: "74px"
+    // link: "https://linesofcontrol.com/",
+    icon: (() => <OnuIcon />)(),
+    // widthIcon: "74px"
+  },
+  {
+    // link: "https://linesofcontrol.com/",
+    icon: (() => <QuatarFondationIcon />)(),
+    // widthIcon: "191px"
+  },
+  {
+    // link: "https://linesofcontrol.com/",
+    icon: (() => <RedbullIcon />)(),
+    // widthIcon: "101px"
   },
   {
     link: "https://linesofcontrol.com/",
-    icon: "./images/quatarFondation.png",
-    widthIcon: "191px"
+    icon: (() => <OfpeaceIcon />)(),
+    // widthIcon: "140px"
   },
   {
     link: "https://linesofcontrol.com/",
-    icon: "./images/redbull.png",
-    widthIcon: "101px"
+    icon: (() => <AlephIcon />)(),
+    // widthIcon: "126px"
   },
   {
     link: "https://linesofcontrol.com/",
-    icon: "./images/ofpeace.png",
-    widthIcon: "140px"
-  },
-  {
-    link: "https://linesofcontrol.com/",
-    icon: "./images/aleph.png",
-    widthIcon: "126px"
-  },
-  {
-    link: "https://linesofcontrol.com/",
-    icon: "./images/tag.png",
-    widthIcon: "166px"
+    icon: (() => <TagIcon />)(),
+    // widthIcon: "166px"
   }
 ]
 
@@ -152,7 +152,8 @@ export default function Work({ ...props }) {
               return (
                 <li className="client" key={ index }>
                   <div className="datas-container">
-                    <img src={ client.icon } style={{ maxWidth: client.widthIcon }} />
+                    { client.icon }
+                    {/* <img src={ client.icon } style={{ maxWidth: client.widthIcon }} /> */}
                   </div>
                 </li>
               )

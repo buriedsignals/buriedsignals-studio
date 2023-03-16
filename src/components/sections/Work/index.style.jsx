@@ -32,7 +32,7 @@ export const WorkStyle = styled.div`
       ${down('md')} {
         width: 35%;
       }
-      img {
+      svg {
         display: block;
         width: 100%;
         margin: 0 auto;
