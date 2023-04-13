@@ -11,7 +11,7 @@ import PercentPlanetIcon from "@/components/icons/PercentPlanet"
 
 export default function FooterDesktop() {
   return (
-    <FooterStyle className="section-dark container-module-extra-extra-large">
+    <FooterStyle className="container-module-extra-extra-large">
       <div className="visu">
         <Link href="/">
           <a className="logo">

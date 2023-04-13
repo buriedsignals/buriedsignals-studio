@@ -11,7 +11,7 @@ import PercentPlanetIcon from "@/components/icons/PercentPlanet"
 
 export default function FooterMobile() {
   return (
-    <FooterStyle className="section-dark">
+    <FooterStyle>
       <div className="visu container-module-large">
         <Link href="/">
           <a className="logo">
