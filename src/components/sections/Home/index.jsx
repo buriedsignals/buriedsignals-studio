@@ -70,9 +70,9 @@ export default function Home({ ...props }) {
           <div className="description-visualization-popup">
             <p className="typography-08">Visualization is a process that involves turning complex information or data into visual representations, such as charts, animations, videos or maps in order to better understand and communicate insights.</p>
             <br />
-            <p className="typography-08">50% of the brain's surface is devoted to visual processing, visualisation guides perception and interpretation. Reducing cognitive overload and effort to influence clarity and accessibility.</p>
+            <p className="typography-08">In today's world many aspects of society, science, business, finance, journalism and everyday life are becoming increasingly quantified and intricate. With an increased demand for transparency.</p>
             <br />
-            <p className="typography-08">In today's world many aspects of society, science, business, finance, journalism and everyday life are becoming increasingly quantified and intricate. Interactive or visual articles can break down these complex topics into more approachable pieces, show their connections in relation to the main message, highlight the impact of investigative reporting, and inform a wide readership of current events and impactful stories.</p>
+            <p className="typography-08">Interactive or visual articles can break down these complex topics into more approachable pieces that leverage the brain's incredibly visual processing and pattern recognition capabilities.</p>
           </div>
         </PopupModule>
       </HomeStyle>
