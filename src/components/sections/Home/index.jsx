@@ -64,15 +64,15 @@ export default function Home({ ...props }) {
   return (
     <Section>
       <HomeStyle ref={templateRef} { ...props } className="container-module-large">      
-        <h1 ref={titleRef} className="typography-05 test">Nuanced is a film and interactive design studio within <a href="https://buriedsignals.com/" target="_blank" rel="noopener noreferrer"><SpanGradientText hover={ true }>Buried&nbsp;Signals</SpanGradientText></a>.<br/><br/>We specialize in <button onClick={ onClickButton }><SpanGradientText hover={ true } revert={ true }>information&nbsp;design</SpanGradientText></button> and <button onClick={ onClickButton }><SpanGradientText hover={ true } revert={ true }>narrative&nbsp;visualization</SpanGradientText></button>.</h1>
+        <h1 ref={titleRef} className="typography-05 test">Nuanced is a data storytelling studio within <a href="https://buriedsignals.com/" target="_blank" rel="noopener noreferrer"><SpanGradientText hover={ true }>Buried&nbsp;Signals</SpanGradientText></a>.<br/><br/>We specialize in <button onClick={ onClickButton }><SpanGradientText hover={ true } revert={ true }>editorial&nbsp;visualization</SpanGradientText></button> and <button onClick={ onClickButton }><SpanGradientText hover={ true } revert={ true }>data&nbsp;experiences</SpanGradientText></button>.</h1>
         <PopupModule className="visualization-popup" titleButton="What is visualization?" callBackButtonPopup={ buttonPopup }>
           <TitleFirstIconText letterColored={ false }>What is visualization?</TitleFirstIconText>
           <div className="description-visualization-popup">
-            <p className="typography-08">Visualization is a process that involves turning complex information or data into visual representations, such as charts, graphs, and maps, in order to better understand and communicate insights.</p>
+            <p className="typography-08">Visualization is a process that involves turning complex information or data into visual representations, such as charts, animations, videos or maps in order to better understand and communicate insights.</p>
             <br />
-            <p className="typography-08">It can help to improve accessibility, comprehension, and memory by allowing people to make sense of complex data in a more intuitive way.</p>
+            <p className="typography-08">50% of the brain's surface is devoted to visual processing, visualisation guides perception and interpretation. Reducing cognitive overload and effort to influence clarity and accessibility.</p>
             <br />
-            <p className="typography-08">In today's world many aspects of society, science, business, finance, journalism and everyday life are becoming increasingly quantified and intricate. Visualization is essential for companies or individuals who need to effectively communicate nuanced problems to a wide audience.</p>
+            <p className="typography-08">In today's world many aspects of society, science, business, finance, journalism and everyday life are becoming increasingly quantified and intricate. Interactive or visual articles can break down these complex topics into more approachable pieces, show their connections in relation to the main message, highlight the impact of investigative reporting, and inform a wide readership of current events and impactful stories.</p>
           </div>
         </PopupModule>
       </HomeStyle>
