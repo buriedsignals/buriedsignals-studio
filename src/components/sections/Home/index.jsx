@@ -23,7 +23,7 @@ export default function Home({ ...props }) {
   useEffect(() => {
       if (titleRef.current) {
         setTimeout(() => {
-          new SplitText(titleRef.current, { type: 'lines,words', linesClass: 'line', wordsClass: 'word' });
+          new SplitText(titleRef.current.querySelectorAll('h1, h2'), { type: 'lines,words', linesClass: 'line', wordsClass: 'word' });
         }, 100)
       }
   }, [titleRef]);
@@ -64,15 +64,18 @@ export default function Home({ ...props }) {
   return (
     <Section>
       <HomeStyle ref={templateRef} { ...props } className="container-module-large">      
-        <h1 ref={titleRef} className="typography-05 test">Nuanced is a data storytelling studio within <a href="https://buriedsignals.com/" target="_blank" rel="noopener noreferrer"><SpanGradientText hover={ true }>Buried&nbsp;Signals</SpanGradientText></a>.<br/><br/>We specialize in <button onClick={ onClickButton }><SpanGradientText hover={ true } revert={ true }>editorial&nbsp;visualization</SpanGradientText></button> and <button onClick={ onClickButton }><SpanGradientText hover={ true } revert={ true }>data&nbsp;experiences</SpanGradientText></button>.</h1>
+        <div ref={titleRef} className="titles">
+          <h1 className="typography-05">A <button onClick={ onClickButton }><SpanGradientText hover={ true } revert={ true }>data&nbsp;storytelling</SpanGradientText></button> and <button onClick={ onClickButton }><SpanGradientText hover={ true } revert={ true }>knowledge&nbsp;visualization</SpanGradientText></button> studio.</h1>
+          <h2 className="typography-12">We help organisations solve complex communication problems by transforming their research or data into impactful visual content.</h2>
+        </div>
         <PopupModule className="visualization-popup" titleButton="What is visualization?" callBackButtonPopup={ buttonPopup }>
           <TitleFirstIconText letterColored={ false }>What is visualization?</TitleFirstIconText>
           <div className="description-visualization-popup">
-            <p className="typography-08">Visualization is a process that involves turning complex information or data into visual representations, such as charts, animations, videos or maps in order to better understand and communicate insights.</p>
+            <p className="typography-08">Visualization is a process that involves turning complex information or data into visual representations, such as charts, graphs, and maps, in order to better understand and communicate insights.</p>
             <br />
-            <p className="typography-08">In today's world many aspects of society, science, business, finance, journalism and everyday life are becoming increasingly quantified and intricate. With an increased demand for transparency.</p>
+            <p className="typography-08">It can help to improve accessibility, comprehension, and memory by allowing people to make sense of complex data in a more intuitive way.</p>
             <br />
-            <p className="typography-08">Interactive or visual articles can break down these complex topics into more approachable pieces that leverage the brain's incredibly visual processing and pattern recognition capabilities.</p>
+            <p className="typography-08">In today's world many aspects of society, science, business, finance, journalism and everyday life are becoming increasingly quantified and intricate. Visualization is essential for companies or individuals who need to effectively communicate nuanced problems to a wide audience.</p>
           </div>
         </PopupModule>
       </HomeStyle>

@@ -296,6 +296,22 @@ button, a {
   line-height: 125%;
 }
 
+.typography-12 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 105%;
+}
+
+.typography-13 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 @media screen and (max-width: 955px) {
   .typography-01 {
     font-size: 20px;
@@ -311,6 +327,10 @@ button, a {
   
   .typography-09 {
     font-size: 30px;
+  }
+
+  .typography-12 {
+    font-size: 20px;
   }
 }
 

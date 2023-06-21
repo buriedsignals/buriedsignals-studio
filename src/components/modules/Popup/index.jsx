@@ -25,7 +25,6 @@ export default function Popup({ children, className = '', titleButton, callBackB
     }
     if (!popupOpen) {
       setTimeout(() => {
-        console.log('ok')
         setTheme('light')
         setTimeout(() => {
           document.querySelector('.header > div').style.background = ""

@@ -53,6 +53,7 @@ export const WorkStyle = styled.div`
         width: 100%;
         height: 1px;
         background-color: var(--color-green02);
+        pointer-events: none;
       }
       &::before {
         top: 0;
@@ -110,6 +111,15 @@ export const WorkStyle = styled.div`
             }
           }
         }
+        .image {
+          position: fixed;
+          top: 0; left: 0;
+          width: 365px;
+          opacity: 0;
+          pointer-events: none;
+          z-index: 20;
+          transition: opacity .085s cubic-bezier(0.12, 0, 0.39, 0);
+        }
         &.no-link {
           svg {
             opacity: 0;
@@ -123,6 +133,10 @@ export const WorkStyle = styled.div`
         }
         &.is-hover {
           transition: all .35s cubic-bezier(0.12, 0, 0.39, 0);
+          .image {
+            opacity: 1;
+            transition: opacity .085s cubic-bezier(0.12, 0, 0.39, 0);
+          }
           p {
             color: var(--color-white);
             transition: color 0.35s cubic-bezier(0.12, 0, 0.39, 0);

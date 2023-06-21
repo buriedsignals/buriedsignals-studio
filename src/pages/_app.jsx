@@ -12,12 +12,12 @@ import useScroll from '@/hooks/useScroll';
 import Layout from '@/components/layouts';
 
 // Metas
-const title = 'Nuanced'
-const url = 'https://www.nuanced.studio/'
+const title = 'Buried Signals Studio'
+const url = 'https://www.studio.buriedsignals.com/'
 const description = "A film and interactive design studio specializing in information visualization."
 const keywords = 'dataviz, information, design, visualisation, narrative, interactive, visual, journalism, awards, resources, insights, courses, community, data'
-const author = 'Nuanced'
-const image = url + 'images/img-meta.jpeg'
+const author = 'Buried Signals'
+const image = url + 'images/img-meta.jpg'
 
 function App({ Component, pageProps }) {
   // Nodes

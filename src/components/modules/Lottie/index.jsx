@@ -27,8 +27,6 @@ export default function Lottie({ animationData, children, ...props }) {
       let scrollPercentage = (scrollFromTop * 100) / totalHeight;
       let scrollPercentRounded = Math.round(scrollPercentage);
 
-      console.log((scrollPercentage * totalFrames) / 100)
-
       if ((scrollPercentage * totalFrames) / 100 < totalFrames && (scrollPercentage * totalFrames) / 100 >= 0) {
         anim.goToAndStop((scrollPercentage * totalFrames) / 100, true);
       } else {
@@ -56,7 +54,6 @@ export default function Lottie({ animationData, children, ...props }) {
   }, [])
   // Handlers
   const onMouseEnterLottie = (e) => {
-    console.log(e.target)
     bodymovin.setDirection(1)
     bodymovin.play()
   }

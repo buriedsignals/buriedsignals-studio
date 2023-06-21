@@ -10,10 +10,18 @@ export const HomeStyle = styled.div`
   ${down('xs')} {
     height: calc(100vh - 100px) !important;
   }
-  h1 {
+  .titles {
     position: relative;
-    max-width: 922px;
+    max-width: 738px;
     opacity: 0;
+  }
+  h1 {
+    padding-bottom: 30px;
+  }
+  h2 {
+    max-width: 538px;
+  }
+  h1, h2 {
     .line {
       display: inline-block;
       overflow: hidden;
