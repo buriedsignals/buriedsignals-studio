@@ -65,28 +65,28 @@ export default function Home({ ...props }) {
     <Section>
       <HomeStyle ref={templateRef} { ...props } className="container-module-large">      
         <div ref={titleRef} className="titles">
-          <h1 className="typography-05">A <button onClick={ onClickButton }><SpanGradientText hover={ true } revert={ true }>data&nbsp;storytelling</SpanGradientText></button> and <button onClick={ onClickButton }><SpanGradientText hover={ true } revert={ true }>knowledge&nbsp;visualization</SpanGradientText></button> studio.</h1>
+          <h1 className="typography-05">A <button onClick={ onClickButton }><SpanGradientText hover={ true } revert={ true }>data&nbsp;storytelling</SpanGradientText></button> and <button onClick={ onClickButton }><SpanGradientText hover={ true } revert={ true }>visual&nbsp;journalism</SpanGradientText></button> studio.</h1>
           <h2 className="typography-12">We help organisations solve complex communication problems by transforming their research or data into impactful visual content.</h2>
         </div>
         <PopupModule className="visualization-popup" titleButton="Pricing" callBackButtonPopup={ buttonPopup }>
           <TitleFirstIconText letterColored={ false }>PPricing</TitleFirstIconText>
           <div className="description-visualization-popup">
             <p className="typography-08">
-            Animated annual reports | $ 16k
+            Digital reports | $ 16k
+            <br />
+            Data stories | $ 14k
             <br />
             Investigative reports | $ 8k
             <br />
             Scientific visualization | $ 8.5k
             <br />
-            Visual essays | $ 14k
-            <br />
             Data visualization websites | $ 32k
+            <br />
+            Landing pages | $ 13k
             <br />
             Animated data videos | $ 21k
             <br />
             Presentation design | $ 7k
-            <br />
-            Publications | $ 13.5k
             <br />
             SoMe visual content | $ 3.5k
             </p>
