@@ -68,14 +68,28 @@ export default function Home({ ...props }) {
           <h1 className="typography-05">A <button onClick={ onClickButton }><SpanGradientText hover={ true } revert={ true }>data&nbsp;storytelling</SpanGradientText></button> and <button onClick={ onClickButton }><SpanGradientText hover={ true } revert={ true }>knowledge&nbsp;visualization</SpanGradientText></button> studio.</h1>
           <h2 className="typography-12">We help organisations solve complex communication problems by transforming their research or data into impactful visual content.</h2>
         </div>
-        <PopupModule className="visualization-popup" titleButton="What is visualization?" callBackButtonPopup={ buttonPopup }>
-          <TitleFirstIconText letterColored={ false }>What is visualization?</TitleFirstIconText>
+        <PopupModule className="visualization-popup" titleButton="Pricing" callBackButtonPopup={ buttonPopup }>
+          <TitleFirstIconText letterColored={ false }>PPricing</TitleFirstIconText>
           <div className="description-visualization-popup">
-            <p className="typography-08">Visualization is a process that involves turning complex information or data into visual representations, such as charts, graphs, and maps, in order to better understand and communicate insights.</p>
+            <p className="typography-08">
+            Animated annual reports | $ 16k
             <br />
-            <p className="typography-08">It can help to improve accessibility, comprehension, and memory by allowing people to make sense of complex data in a more intuitive way.</p>
+            Investigative reports | $ 8k
             <br />
-            <p className="typography-08">In today's world many aspects of society, science, business, finance, journalism and everyday life are becoming increasingly quantified and intricate. Visualization is essential for companies or individuals who need to effectively communicate nuanced problems to a wide audience.</p>
+            Scientific visualization | $ 8.5k
+            <br />
+            Visual essays | $ 14k
+            <br />
+            Data visualization websites | $ 32k
+            <br />
+            Animated data videos | $ 21k
+            <br />
+            Presentation design | $ 7k
+            <br />
+            Publications | $ 13.5k
+            <br />
+            SoMe visual content | $ 3.5k
+            </p>
           </div>
         </PopupModule>
       </HomeStyle>

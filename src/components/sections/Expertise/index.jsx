@@ -23,7 +23,7 @@ export default function Expertise({ ...props }) {
             <p className="typography-08">We use journalism, design and creative technology to help brands communicate visually to large audiences. Working with communications and marketing teams to produce experiences or reports that get real results.</p>
           </div>
           <PopupModule className="studio-popup" titleButton="F.A.Q">
-            <Accordion titleButton="What is visualization?" opened={ true }>
+            <Accordion titleButton="What do you do?" opened={ true }>
               <p className="typography-08">It's the use of design, media and creative technology to replace text with impactful content that engages broader audiences.</p>
               <p className="typography-08">I’ve applied this visual storytelling to different formats; for print, video, editorial, blogs, social media, PDFs, presentations, and microsites.</p>
             </Accordion>
