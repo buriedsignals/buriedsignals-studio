@@ -188,7 +188,11 @@ button, a {
 }
 
 .theme-green p, .theme-green a {
-  color: var(--color-white);
+  color: var(--color-white) !important;
+}
+
+.theme-green a::before {
+  background-color: var(--color-white) !important;
 }
 
 .section-dark {

@@ -17,6 +17,9 @@ export const HomeStyle = styled.div`
   }
   h1 {
     padding-bottom: 30px;
+    .media-hover-container {
+      display: inline-block;
+    }
   }
   h2 {
     max-width: 538px;
@@ -45,11 +48,19 @@ export const HomeStyle = styled.div`
         left: initial !important;
       }
     }
-    .title-first-icon {
+    .pricing {
       padding-bottom: 35px;
       ${down('md')} {
         padding-bottom: 17.5px;
       }
+    }
+    .panel-container-popup .children-container-popup {
+      max-width: 425px;
+    }
+    .description-visualization-popup {
+      display: flex;
+      justify-content: space-between;
+      gap: 62px;
     }
     .button-container-popup.open-button-container-popup {
       p {

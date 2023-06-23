@@ -1,20 +1,33 @@
 // Styles
 import { HomeStyle } from "./index.style"
+// Scripts
+import SplitText from '@/scripts/SplitText';
+// Nodes
+import gsap, { Expo, Power2, Sine } from 'gsap';
+import { CustomEase } from "gsap/dist/CustomEase";
+// React
+import { useEffect, useRef, useState } from "react";
 // Modules
+import Section from "@/components/modules/Section";
 import PopupModule from "@/components/modules/Popup"
 // Texts
 import SpanGradientText from "@/components/texts/SpanGradient"
-import TitleFirstIconText from "@/components/texts/TitleFirstIcon"
-
-import gsap, { Circ, Expo, Power2, Power4, Sine } from 'gsap';
-import SplitText from '@/scripts/SplitText';
-import { useEffect, useRef, useState } from "react";
-import Section from "@/components/modules/Section";
-import useStore from "@/hooks/useStore";
-import { CustomEase } from "gsap/dist/CustomEase";
+import HoverImageText from "@/components/texts/HoverMedia";
 
 gsap.registerPlugin(CustomEase);
 gsap.registerPlugin(SplitText);
+
+const pricing = [
+  { name: "Annual reports", price: "$ 16k" },
+  { name: "Investigate reports", price: "$ 8k" },
+  { name: "Scientific visualization", price: "$ 8.5k" },
+  { name: "Visual essays", price: "$ 14k" },
+  { name: "Data visualization websites", price: "$ 32k" },
+  { name: "Animated data videos", price: "$ 21k" },
+  { name: "Presentation design", price: "$ 7k" },
+  { name: "Publications", price: "$ 13.5k" },
+  { name: "SoMe visual content", price: "$ 3.5k" }
+]
 
 export default function Home({ ...props }) {
   const templateRef = useRef()
@@ -31,7 +44,7 @@ export default function Home({ ...props }) {
     const timeline = new gsap.timeline();      
     setTimeout(() => {
       if (titleRef.current) {
-        timeline.set(titleRef.current, { opacity: 1 });
+        timeline.set(titleRef.current, { opacity: 1, pointerEvents: 'none' });
         // timeline.set(document.querySelector('.header'), { opacity: 0 });
         // timeline.set(templateRef.current.querySelector('.visualization-popup'), { opacity: 0 });
         // timeline.set(titleRef.current.querySelectorAll('.underline'), { width: 0, opacity: 0 });
@@ -45,6 +58,7 @@ export default function Home({ ...props }) {
             timeline.to(line.querySelectorAll('.word'), 0.75, { y: 0, ease: CustomEase.create("custom", "0.25, 0.1, 0.74, 0.91") }, i !== 0 ? '-=0.55' : '');
           }
         });
+        timeline.to(titleRef.current, 0, { pointerEvents: 'auto' });
         timeline.to(titleRef.current.querySelectorAll('.underline'), 1, { width: '100%', opacity: 1, ease: Expo.easeInOut }, '-=.75');
         timeline.to(document.querySelector('.header'), 0.5, { opacity: 1, y: 0, ease: CustomEase.create("custom", "0.25, 0.1, 0.74, 0.91") }, '-=0.75');
         timeline.to(templateRef.current.querySelector('.visualization-popup .open-button-container-popup .circle-after'), 0.45, { scale: 1, ease: Power2.easeOut }, '-=0.8');
@@ -57,25 +71,34 @@ export default function Home({ ...props }) {
       timeline.kill()
     }
   }, [])
-  // Handlers
-  const onClickButton = () => {
-    setButtonPopup(buttonPopup + 1)
-  }
   return (
     <Section>
       <HomeStyle ref={templateRef} { ...props } className="container-module-large">      
         <div ref={titleRef} className="titles">
-          <h1 className="typography-05">A <button onClick={ onClickButton }><SpanGradientText hover={ true } revert={ true }>data&nbsp;storytelling</SpanGradientText></button> and <button onClick={ onClickButton }><SpanGradientText hover={ true } revert={ true }>knowledge&nbsp;visualization</SpanGradientText></button> studio.</h1>
+          <h1 className="typography-05">A <HoverImageText media={{ type: "image", src: "./images/img-project-tag.png", alt: "" }}><SpanGradientText hover={ true } revert={ true }>data&nbsp;storytelling</SpanGradientText></HoverImageText> and <HoverImageText media={{ type: "image", src: "./images/img-project-aleph.png", alt: "" }}><SpanGradientText hover={ true } revert={ true }>knowledge&nbsp;visualization</SpanGradientText></HoverImageText> studio.</h1>
           <h2 className="typography-12">We help organisations solve complex communication problems by transforming their research or data into impactful visual content.</h2>
         </div>
-        <PopupModule className="visualization-popup" titleButton="What is visualization?" callBackButtonPopup={ buttonPopup }>
-          <TitleFirstIconText letterColored={ false }>What is visualization?</TitleFirstIconText>
+        <PopupModule className="visualization-popup" titleButton="Pricing" callBackButtonPopup={ buttonPopup }>
+        <h2 class="pricing typography-05">Pricing</h2>
           <div className="description-visualization-popup">
-            <p className="typography-08">Visualization is a process that involves turning complex information or data into visual representations, such as charts, graphs, and maps, in order to better understand and communicate insights.</p>
-            <br />
-            <p className="typography-08">It can help to improve accessibility, comprehension, and memory by allowing people to make sense of complex data in a more intuitive way.</p>
-            <br />
-            <p className="typography-08">In today's world many aspects of society, science, business, finance, journalism and everyday life are becoming increasingly quantified and intricate. Visualization is essential for companies or individuals who need to effectively communicate nuanced problems to a wide audience.</p>
+            <ul className="names">
+              { pricing.map((item, index) => {
+                return (
+                  <li key={ `name-${ index }` }>
+                    <p className="typography-08">{ item.name }</p>
+                  </li>
+                ) 
+              }) }
+            </ul>
+            <ul className="prices">
+              { pricing.map((item, index) => {
+                return (
+                  <li key={ `price-${ index }` }>
+                    <p className="typography-08">{ item.price }</p>
+                  </li>
+                ) 
+              }) }
+            </ul>
           </div>
         </PopupModule>
       </HomeStyle>

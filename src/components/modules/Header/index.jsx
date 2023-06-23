@@ -1,19 +1,25 @@
 // Styles
 import { HeaderStyle } from "./index.style"
+// React
+import { useEffect, useRef, useState } from "react";
+// Next
+import { useRouter } from "next/router";
 // Nodes
 import { down } from "styled-breakpoints"
 import { useBreakpoint } from 'styled-breakpoints/react-styled';
 // Modules
 import HeaderDesktop from "@/components/modules/Header/Desktop"
 import HeaderMobile from "@/components/modules/Header/Mobile"
-import { useRouter } from "next/router";
-import { useEffect, useRef, useState } from "react";
+// Hooks
+import useStore from "@/hooks/useStore"
 
 export default function Header() {
   // References
   const lastScroll = useRef(0)
   // States
   const [stick, setStick] = useState(true)
+  // Hooks
+  const [popupOpen] = useStore((state) => [state.popupOpen])
   // Effects
   useEffect(() => {
     window.addEventListener('scroll', onScroll)
@@ -21,6 +27,13 @@ export default function Header() {
       window.removeEventListener('scroll', onScroll)
     }
   }, [])
+  useEffect(() => {
+    if (popupOpen) {
+      setTimeout(() => {
+        setStick(true)
+      }, 1000)
+    }
+  }, [popupOpen])
   // Handlers
   const onScroll = () => {
     if (lastScroll.current > window.pageYOffset || window.pageYOffset == 0) {
