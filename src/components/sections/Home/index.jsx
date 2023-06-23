@@ -72,13 +72,13 @@ export default function Home({ ...props }) {
           <TitleFirstIconText letterColored={ false }>PPricing</TitleFirstIconText>
           <div className="description-visualization-popup">
             <p className="typography-08">
-            Digital reports | $ 16k
+            annual reports | $ 16k
             <br />
             Data stories | $ 14k
             <br />
             Investigative reports | $ 8k
             <br />
-            Scientific visualization | $ 8.5k
+            Science visualizations | $ 8.5k
             <br />
             Data visualization websites | $ 32k
             <br />
