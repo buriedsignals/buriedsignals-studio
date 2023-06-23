@@ -14,7 +14,7 @@ import Layout from '@/components/layouts';
 // Metas
 const title = 'Buried Signals Studio'
 const url = 'https://www.studio.buriedsignals.com/'
-const description = "A film and interactive design studio specializing in information visualization."
+const description = "A data storytelling and visual journalism studio."
 const keywords = 'dataviz, information, design, visualisation, narrative, interactive, visual, journalism, awards, resources, insights, courses, community, data'
 const author = 'Buried Signals'
 const image = url + 'images/img-meta.jpg'

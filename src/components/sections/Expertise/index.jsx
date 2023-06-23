@@ -22,16 +22,15 @@ export default function Expertise({ ...props }) {
             <TitleFirstIconText className="test" letterColored={ true }>What we do</TitleFirstIconText>
             <p className="typography-08">We use journalism, design and creative technology to help brands communicate visually to large audiences. Working with communications and marketing teams to produce experiences or reports that get real results.</p>
           </div>
-          <PopupModule className="studio-popup" titleButton="How we work">
-            <Accordion titleButton="What we produce" opened={ true }>
-              <p className="typography-08">Our projects come in many shapes and sizes. Whether it is telling explanatory stories with illustration, enabling users to explore and find their own stories within interactive experiences or using animation and documentary filmmaking to guide audiences through complex subjects.</p>
-              <p className="typography-08">Sometimes projects require the combination of both explanatory and exploratory approaches to meet the needs of different users.</p>
-              <p className="typography-08">We’ve applied this visual storytelling to different formats; for print, video, editorial, blogs, social media, PDFs, presentations, and microsites.</p>
+          <PopupModule className="studio-popup" titleButton="F.A.Q">
+            <Accordion titleButton="What do you do?" opened={ true }>
+              <p className="typography-08">It's the use of design, media and creative technology to replace text with impactful content that engages broader audiences.</p>
+              <p className="typography-08">I’ve applied this visual storytelling to different formats; for print, video, editorial, blogs, social media, PDFs, presentations, and microsites.</p>
             </Accordion>
-            <Accordion titleButton="How do we do it">
-              <p className="typography-08">Using specialized expertise from the collective in fields such as data science, 3D, video, design and development we've produced enhanced editorial experiences that provide clarity in complexity across a range of industries and social issues.</p>
-              <p className="typography-08">We make connections between disciplines and issues in unconventional ways to increase interdisciplinary understanding.</p>
-              <p className="typography-08">We typically separate projects into a few stages based on the format, as a small team we move forward without information loss through heavy handoffs between phases.</p>
+            <Accordion titleButton="How do you work?">
+              <p className="typography-08">Using a network of trusted experts in data science, 3D, video, design and development I've produced enhanced editorial experiences across a range of industries and social issues.</p>
+              <p className="typography-08">I use a phased approach, starting with a pilot sprint to get a better idea of your needs and defining the project together.</p>
+              <p className="typography-08">My priority is to make sure clients get a return on their investment, not make absurd profits. I love working with impact-driven organisations (which is why I also offer discounts).</p>
             </Accordion>
           </PopupModule>
         </div>

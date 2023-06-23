@@ -21,6 +21,15 @@ import FirstClimateIcon from "@/components/icons/FirstClimate"
 
 const projects = [
   {
+    name: "First Climate",
+    img: {
+      src: "./images/img-project-firstclimate.png",
+    },
+    infos: {
+      description: "Biochar producer landing page and web app design for",
+      provider: "First Climate"
+    }
+  },{
     link: "https://linesofcontrol.com/",
     name: "Lines of Control",
     media: {
@@ -58,7 +67,7 @@ const projects = [
   },
   {
     link: "https://gather.seedsofpeace.org/",
-    name: "We GATHER",
+    name: "GATHER Initiative",
     media: {
       type: "video",
       src: "./videos/video-project-gather.mp4",

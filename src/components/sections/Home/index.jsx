@@ -19,13 +19,13 @@ gsap.registerPlugin(SplitText);
 
 const pricing = [
   { name: "Annual reports", price: "$ 16k" },
-  { name: "Investigate reports", price: "$ 8k" },
-  { name: "Scientific visualization", price: "$ 8.5k" },
-  { name: "Visual essays", price: "$ 14k" },
+  { name: "Data stories", price: "$ 14k" },
+  { name: "Investigative reports", price: "$ 8k" },
+  { name: "Science visualizations", price: "$ 8.5k" },
   { name: "Data visualization websites", price: "$ 32k" },
+  { name: "Landing pages", price: "$ 13k" },
   { name: "Animated data videos", price: "$ 21k" },
   { name: "Presentation design", price: "$ 7k" },
-  { name: "Publications", price: "$ 13.5k" },
   { name: "SoMe visual content", price: "$ 3.5k" }
 ]
 
