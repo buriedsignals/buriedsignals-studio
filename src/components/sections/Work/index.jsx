@@ -22,8 +22,10 @@ import FirstClimateIcon from "@/components/icons/FirstClimate"
 const projects = [
   {
     name: "First Climate",
-    img: {
+    media: {
+      type: "image",
       src: "./images/img-project-firstclimate.png",
+      alt: "Cover image of the project First Climate"
     },
     infos: {
       description: "Biochar producer landing page and web app design for",

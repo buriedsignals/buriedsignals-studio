@@ -82,6 +82,13 @@ export default function HeaderMobile() {
               </a>
             </Link>
           </li>
+          <li className={ `external${ menuOpen ? " is-open" : '' }` }>
+            <a href="https://calendly.com/buriedsignals/15min" target="_blank" rel="noopener noreferrer">
+              <div className="link-container">
+                <p className="typography-01">Book a call</p>
+              </div>
+            </a>
+          </li>
         </ul>
       </div>
     </HeaderStyle>

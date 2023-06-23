@@ -71,6 +71,11 @@ export const HeaderStyle = styled.div`
         border: 1px solid var(--color-black);
         border-radius: 5px;
         transition: all 0.25s ease-in;
+        .theme-green & {
+          background-color: var(--color-white);
+          border: 1px solid var(--color-white);
+          transition: all .05s ease-in;
+        }
         .link-container {
           display: flex;
           align-items: center;
@@ -84,6 +89,9 @@ export const HeaderStyle = styled.div`
             color: var(--color-white);
             text-transform: uppercase;
             transition: all 0.25s ease-in;
+            .theme-green & {
+              color: var(--color-green05) !important;
+            }
           }
           & > *:not(:first-child) {
             margin-left: 10px;
@@ -93,10 +101,18 @@ export const HeaderStyle = styled.div`
           background-color: inherit;
           border: 1px solid var(--color-black);
           transition: all 0.25s ease-out;
+          .theme-green & {
+            border: 1px solid var(--color-white);
+            color: var(--color-white);
+            transition: all 0.25s ease-out;
+          }
           .link-container {
             p {
               color: var(--color-black);
               transition: all 0.25s ease-out;
+              .theme-green & {
+                color: var(--color-white) !important;
+              }
             }
           }
         }

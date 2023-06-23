@@ -79,7 +79,7 @@ export default function Home({ ...props }) {
           <h2 className="typography-12">We help organisations solve complex communication problems by transforming their research or data into impactful visual content.</h2>
         </div>
         <PopupModule className="visualization-popup" titleButton="Pricing" callBackButtonPopup={ buttonPopup }>
-        <h2 class="pricing typography-05">Pricing</h2>
+        <h2 className="pricing typography-05">Pricing</h2>
           <div className="description-visualization-popup">
             <ul className="names">
               { pricing.map((item, index) => {

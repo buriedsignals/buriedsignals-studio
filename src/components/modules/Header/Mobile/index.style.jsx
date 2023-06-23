@@ -93,5 +93,51 @@ export const HeaderStyle = styled.div`
         }
       }
     }
+    .external {
+      position: relative;
+      display: inline-block;
+      background-color: var(--color-black);
+      border: 1px solid var(--color-black);
+      border-radius: 5px;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 1s linear, background-color 0.25s ease-in, border 0.25s ease-in;
+      &.is-open {
+        opacity: 1;
+        visibility: initial;
+        pointer-events: initial;
+        transition: all .75s linear 1.2s;
+      }
+      .link-container {
+        display: flex;
+        align-items: center;
+        padding: 12px;
+        svg {
+          path {
+            transition: all 0.25s ease-in;
+          }
+        }
+        p {
+          color: var(--color-white);
+          text-transform: uppercase;
+          transition: all 0.25s ease-in;
+        }
+        & > *:not(:first-child) {
+          margin-left: 10px;
+        }
+      }
+      &:hover {
+        background-color: inherit;
+        border: 1px solid var(--color-black);
+        transition: all 0.25s ease-out;
+        .link-container {
+          p {
+            color: var(--color-black);
+            transition: all 0.25s ease-out;
+          }
+        }
+      }
+    }
   }
 `
