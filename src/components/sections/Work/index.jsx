@@ -56,6 +56,7 @@ const projects = [
     }
   },
   {
+    link: "https://buried-signals.medium.com/report-design-for-talent-acquisition-group-e9b603ebf125",
     name: "Talent Search",
     media: {
       type: "image",
@@ -76,7 +77,7 @@ const projects = [
     },
     infos: {
       description: "Branding, website design and film production for",
-      provider: "GATHER Foundation"
+      provider: "Seeds of Peace"
     }
   },
   {
