@@ -70,18 +70,18 @@ const projects = [
   },
   {
     link: "https://gather.seedsofpeace.org/",
-    name: "NGO Promo Film & Website",
+    name: "Promo Film & Website",
     media: {
       type: "video",
       src: "./videos/video-project-gather.mp4",
     },
     infos: {
-      description: "An NGO promotion video using archived footage, with website design and development",
+      description: "An NGO promotion video using archived footage, with website design and development for",
       provider: "Seeds of Peace"
     }
   },
   {
-    name: "NGO Data-led Experience",
+    name: "Data-led Experience",
     media: {
       type: "video",
       src: "./videos/video-project-qf.mp4",
@@ -98,19 +98,19 @@ const projects = [
       src: "./videos/video-project-aleph.mp4",
     },
     infos: {
-      description: "A animated explanatory video of the company's strategy using data",
+      description: "A animated explanatory video of the company's strategy using data for",
       provider: "Aleph"
     }
   },
   {
     link: "https://www.youtube.com/watch?v=IhYN0Ayo0i0",
-    name: "Wallrunners of Gaza",
+    name: "Film Documentary",
     media: {
       type: "video",
       src: "./videos/video-project-kapture.mp4",
     },
     infos: {
-      description: "Web documentary about the history of parkour in Gaza",
+      description: "Web documentary about the history of parkour in Gaza for",
       provider: "Red Bull"
     }
   }
