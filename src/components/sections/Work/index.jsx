@@ -94,9 +94,8 @@ const projects = [
   {
     name: "Explanatory Video Animation",
     media: {
-      type: "image",
-      src: "./videos/video-project-aleph.move",
-      alt: "Cover video of the investor explainer animation"
+      type: "video",
+      src: "./videos/video-project-aleph.mp4",
     },
     infos: {
       description: "A animated explanatory video of the company's strategy using data",
