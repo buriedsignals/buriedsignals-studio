@@ -21,19 +21,19 @@ import FirstClimateIcon from "@/components/icons/FirstClimate"
 
 const projects = [
   {
-    name: "First Climate",
+    name: "Website Design & Visualization",
     media: {
       type: "image",
       src: "./images/img-project-firstclimate.png",
       alt: "Cover image of the project First Climate"
     },
     infos: {
-      description: "Biochar producer landing page and web app design for",
+      description: "Biochar producer landing page and web app design with knowledge visualization for",
       provider: "First Climate"
     }
   },{
     link: "https://linesofcontrol.com/",
-    name: "Lines of Control",
+    name: "Interactive Documentary",
     media: {
       type: "video",
       src: "./videos/video-project-lines.mp4",
@@ -45,7 +45,7 @@ const projects = [
   },
   {
     link: "https://yementribute.com/",
-    name: "The Yemen Tribute",
+    name: "Visual Essay",
     media: {
       type: "video",
       src: "./videos/video-project-yemen.mp4",
@@ -57,7 +57,7 @@ const projects = [
   },
   {
     link: "https://buried-signals.medium.com/report-design-for-talent-acquisition-group-e9b603ebf125",
-    name: "Talent Search",
+    name: "Report Design",
     media: {
       type: "image",
       src: "./images/img-project-tag.png",
@@ -70,18 +70,18 @@ const projects = [
   },
   {
     link: "https://gather.seedsofpeace.org/",
-    name: "GATHER Initiative",
+    name: "NGO Promo Film & Website",
     media: {
       type: "video",
       src: "./videos/video-project-gather.mp4",
     },
     infos: {
-      description: "Branding, website design and film production for",
+      description: "An NGO promotion video using archived footage, with website design and development",
       provider: "Seeds of Peace"
     }
   },
   {
-    name: "QF in Numbers",
+    name: "NGO Data-led Experience",
     media: {
       type: "video",
       src: "./videos/video-project-qf.mp4",
@@ -92,15 +92,15 @@ const projects = [
     }
   },
   {
-    name: "Investor Presentation Infoviz",
+    name: "Explanatory Video Animation",
     media: {
       type: "image",
-      src: "./images/img-project-aleph.png",
-      alt: "Cover image of the project Investor Presentation Infoviz"
+      src: "./videos/video-project-aleph.move",
+      alt: "Cover video of the investor explainer animation"
     },
     infos: {
-      description: "Creative direction and information visualization for an investor video and presentation video by",
-      provider: "Aleph Group"
+      description: "A animated explanatory video of the company's strategy using data",
+      provider: "Aleph"
     }
   },
   {
