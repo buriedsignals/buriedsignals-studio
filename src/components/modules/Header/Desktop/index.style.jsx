@@ -79,7 +79,7 @@ export const HeaderStyle = styled.div`
         .link-container {
           display: flex;
           align-items: center;
-          padding: 12px;
+          padding: 16px;
           svg {
             path {
               transition: all 0.25s ease-in;
