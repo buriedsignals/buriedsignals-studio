@@ -45,7 +45,7 @@ const projects = [
   },
   {
     link: "https://yementribute.com/",
-    name: "Visual Essay",
+    name: "Visual Investigation",
     media: {
       type: "video",
       src: "./videos/video-project-yemen.mp4",
