@@ -163,7 +163,7 @@ export default function Work({ ...props }) {
   return (
     <Section className="section-dark">
       <WorkStyle { ...props } id="work" className="container-module-large">
-        <TitleFirstIconText>What we've done</TitleFirstIconText>
+        <TitleFirstIconText>What I've done</TitleFirstIconText>
         <ul className="projects">
           { projects.map((project, index) => {
             return (
@@ -194,7 +194,7 @@ export default function Work({ ...props }) {
           }) }
         </ul>
         <div className="trust">
-          <h3 className="typography-04">They trusted us</h3>
+          <h3 className="typography-04">They trusted me</h3>
           <ul className="clients">
             { clients.map((client, index) => {
               return (
