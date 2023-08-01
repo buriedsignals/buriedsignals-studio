@@ -54,6 +54,18 @@ const projects = [
       description: "Visualising investigative data with mapping and editorial alongside",
       provider: "The Yemen Foundation"
     }
+  },{
+    link: "https://www.thebureauinvestigates.com/stories/2023-07-31/the-sunshine-millionaire-how-one-man-took-130m-from-british-taxpayers?x-craft-preview=aY5cgBAy38&token=mO8ih9rfD0pUeYQin_X5lfCXAKvwMnaf",
+    name: "Editorial Visualization",
+    media: {
+      type: "video",
+      src: "./videos/video-project-tbij.mp4",
+      alt: "Animated scroll illustration of a tax fraud scheme"
+    },
+    infos: {
+      description: "Illustration and scrollytelling for an investigation on tax fraud by",
+      provider: "The Bureau Investigates"
+    }
   },
   {
     link: "https://buried-signals.medium.com/report-design-for-talent-acquisition-group-e9b603ebf125",
