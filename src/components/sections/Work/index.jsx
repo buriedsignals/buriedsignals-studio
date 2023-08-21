@@ -44,7 +44,7 @@ const projects = [
     }
   },
   {
-    link: "https://yementribute.com/",
+    link: "https://yemen.buriedsignals.com/",
     name: "Visual Investigation",
     media: {
       type: "video",
