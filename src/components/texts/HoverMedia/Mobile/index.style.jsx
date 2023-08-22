@@ -33,8 +33,13 @@ export const HoverMediaMobileStyle = styled.div`
       top: 0; left: 0;
       width: 100%;
       height: 100%;
-      background: #000000ee;
       z-index: -1;
+      .theme-light & {
+        background: #F5F2EDee;
+      }
+      .theme-dark & {
+        background: #000000ee;
+      }
     }
     .actions {
       display: flex;
@@ -46,15 +51,25 @@ export const HoverMediaMobileStyle = styled.div`
         align-items: center;
         min-width: 70px;
         padding: 7.5px 15px;
-        border: 1px solid var(--color-white);
         border-radius: 5px;
+        .theme-light & {
+          border: 1px solid var(--color-black);
+        }
+        .theme-dark & {
+          border: 1px solid var(--color-white);
+        }
         p {
           display: flex;
           align-items: center;
           justify-content: center;
           gap: 5px;
           line-height: 1;
-          color: var(--color-white) !important;
+          .theme-light & {
+            color: var(--color-black) !important;
+          }
+          .theme-dark & {
+            color: var(--color-white) !important;
+          }
           svg {
             width: 14px;
             height: 14px;
@@ -62,12 +77,27 @@ export const HoverMediaMobileStyle = styled.div`
           }
         }
         &.external-link {
-          background-color: var(--color-white);
+          .theme-light & {
+            background-color: var(--color-black) !important;
+          }
+          .theme-dark & {
+            background-color: var(--color-white) !important;
+          }
           p {
-            color: var(--color-black) !important;
+            .theme-light & {
+              color: var(--color-white) !important;
+            }
+            .theme-dark & {
+              color: var(--color-black) !important;
+            }
             svg {
               path {
-                stroke: var(--color-black);
+                .theme-light & {
+                  stroke: var(--color-white);
+                }
+                .theme-dark & {
+                  stroke: var(--color-black);
+                }
               }
             }
           }

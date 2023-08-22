@@ -1,3 +1,5 @@
 import styled from "styled-components";
 
-export const HoverMediaStyle = styled.div``
+export const HoverMediaStyle = styled.div`
+  display: inline-block;
+`
