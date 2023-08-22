@@ -79,7 +79,7 @@ export const WorkStyle = styled.div`
           padding: 15px 25px 15px 10px;
         }
         ${down('xs')} {
-          padding: 15px 0;
+          padding: 15px 7.5px;
         }
         .datas {
           display: flex;
@@ -144,6 +144,9 @@ export const WorkStyle = styled.div`
           svg {
             transform: translate3D(10px, 0, 0);
             transition: transform 0.35s cubic-bezier(0.12, 0, 0.39, 0);
+            ${down('xs')} {
+              transform: translate3D(0, 0, 0);
+            }
             path {
               stroke: var(--color-white);
               transition: color 0.35s cubic-bezier(0.12, 0, 0.39, 0);
