@@ -49,8 +49,8 @@ export const HoverMediaMobileStyle = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 70px;
-        padding: 7.5px 15px;
+        min-width: 90px;
+        padding: 10px 15px 9.5px;
         border-radius: 5px;
         .theme-light & {
           border: 1px solid var(--color-black);
