@@ -12,7 +12,7 @@ export const HomeStyle = styled.div`
   }
   .titles {
     position: relative;
-    width: 838px;
+    width: 738px;
     opacity: 0;
   }
   h1 {
