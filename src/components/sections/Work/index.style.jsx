@@ -67,6 +67,9 @@ export const WorkStyle = styled.div`
           display: block;
         }
       }
+      .media-hover-container-container {
+        width: 100%;
+      }
       .datas-container {
         display: flex;
         justify-content: space-between;

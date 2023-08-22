@@ -9,7 +9,7 @@ import HoverMediaMobile from "@/components/texts/HoverMedia/Mobile"
 
 export default function HoverMedia({ children, media, ...props }) {
   return (
-    <HoverMediaStyle { ...props }>
+    <HoverMediaStyle className="media-hover-container-container" { ...props }>
       { useBreakpoint(down('sm')) ?
           <HoverMediaMobile media={ media }>
             { children }
