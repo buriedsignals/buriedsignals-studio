@@ -18,14 +18,14 @@ gsap.registerPlugin(CustomEase);
 gsap.registerPlugin(SplitText);
 
 const pricing = [
-  { name: "Annual reports", price: "$ 16k" },
-  { name: "Data stories", price: "$ 14k" },
-  { name: "Investigative reports", price: "$ 8k" },
-  { name: "Science visualizations", price: "$ 8.5k" },
-  { name: "Data visualization websites", price: "$ 32k" },
+  { name: "Annual reports", price: "$ 8-16k" },
+  { name: "Data stories", price: "$ 10-14k" },
+  { name: "Investigative reports", price: "$ 8-12k" },
+  { name: "Science visualizations", price: "$ 4-8.5k" },
+  { name: "Data visualization websites", price: "$ 24-32k" },
   { name: "Landing pages", price: "$ 13k" },
-  { name: "Animated data videos", price: "$ 21k" },
-  { name: "Presentation design", price: "$ 7k" },
+  { name: "Animated data videos", price: "$ 17-22k" },
+  { name: "Presentation design", price: "$ 6-8.5k" },
   { name: "SoMe visual content", price: "$ 3.5k" }
 ]
 
@@ -75,8 +75,8 @@ export default function Home({ ...props }) {
     <Section>
       <HomeStyle ref={templateRef} { ...props } className="container-module-large">      
         <div ref={titleRef} className="titles">
-          <h1 className="typography-05">A <HoverImageText media={{ type: "image", src: "./images/img-project-tag.png", alt: "" }}><SpanGradientText hover={ true } revert={ true }>data&nbsp;storytelling</SpanGradientText></HoverImageText> and <HoverImageText media={{ type: "video", src: "./videos/video-project-lines.mp4" }}><SpanGradientText hover={ true } revert={ true }>visual&nbsp;journalism</SpanGradientText></HoverImageText> studio.</h1>
-          <h2 className="typography-12">We help organisations solve complex communication problems by transforming their research or data into impactful visual content.</h2>
+          <h1 className="typography-05">A <HoverImageText media={{ type: "image", src: "./images/img-project-tag.png", alt: "" }}><SpanGradientText hover={ true } revert={ true }>data&nbsp;storytelling</SpanGradientText></HoverImageText> and <HoverImageText media={{ type: "video", src: "./videos/video-project-lines.mp4" }}><SpanGradientText hover={ true } revert={ true }>visual&nbsp;communications</SpanGradientText></HoverImageText> studio.</h1>
+          <h2 className="typography-12">I help organisations solve complex communication problems by transforming their research or data into impactful visual content.</h2>
         </div>
         <PopupModule className="visualization-popup" titleButton="Pricing" callBackButtonPopup={ buttonPopup }>
         <h2 className="pricing typography-05">Pricing</h2>

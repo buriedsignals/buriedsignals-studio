@@ -44,8 +44,8 @@ const projects = [
     }
   },
   {
-    link: "https://yementribute.com/",
-    name: "Visual Essay",
+    link: "https://yemen.buriedsignals.com/",
+    name: "Visual Investigation",
     media: {
       type: "video",
       src: "./videos/video-project-yemen.mp4",
@@ -53,6 +53,18 @@ const projects = [
     infos: {
       description: "Visualising investigative data with mapping and editorial alongside",
       provider: "The Yemen Foundation"
+    }
+  },{
+    link: "https://www.thebureauinvestigates.com/stories/2023-07-31/the-sunshine-millionaire-how-one-man-took-130m-from-british-taxpayers?x-craft-preview=aY5cgBAy38&token=mO8ih9rfD0pUeYQin_X5lfCXAKvwMnaf",
+    name: "Editorial Visualization",
+    media: {
+      type: "video",
+      src: "./videos/video-project-tbij.mp4",
+      alt: "Animated scroll illustration of a tax fraud scheme"
+    },
+    infos: {
+      description: "Illustration and scrollytelling for an investigation on tax fraud by",
+      provider: "The Bureau Investigates"
     }
   },
   {
@@ -163,7 +175,7 @@ export default function Work({ ...props }) {
   return (
     <Section className="section-dark">
       <WorkStyle { ...props } id="work" className="container-module-large">
-        <TitleFirstIconText>What we've done</TitleFirstIconText>
+        <TitleFirstIconText>What I've done</TitleFirstIconText>
         <ul className="projects">
           { projects.map((project, index) => {
             return (
@@ -194,7 +206,7 @@ export default function Work({ ...props }) {
           }) }
         </ul>
         <div className="trust">
-          <h3 className="typography-04">They trusted us</h3>
+          <h3 className="typography-04">They trusted me</h3>
           <ul className="clients">
             { clients.map((client, index) => {
               return (
