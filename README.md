@@ -21,7 +21,7 @@ yarn install
 yarn dev
 
 # build and put into production on vercel from the main branch
-git push origin main
+git push origin master
 ```
 
 For detailed explanation on how things work, checkout the [guide](https://nextjs.org/docs).
