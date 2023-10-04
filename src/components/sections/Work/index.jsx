@@ -21,6 +21,18 @@ import FirstClimateIcon from "@/components/icons/FirstClimate"
 
 const projects = [
   {
+    name: "Dynamic Impact Report",
+    media: {
+      type: "image",
+      src: "./images/img-project-seedsofpeace.png",
+      alt: "Cover image of the project Seeds of Peace"
+    },
+    infos: {
+      description: "We produced a dynamic and static impact report for ",
+      provider: "Seeds of Peace"
+    }
+  },
+  {
     name: "Website Design & Visualization",
     media: {
       type: "image",
