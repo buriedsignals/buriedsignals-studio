@@ -15,7 +15,6 @@ import QuatarFondationIcon from "@/components/icons/QuatarFondation"
 import RedbullIcon from "@/components/icons/Redbull"
 import OfpeaceIcon from "@/components/icons/Ofpeace"
 import AlephIcon from "@/components/icons/Aleph"
-// import TagIcon from "@/components/icons/Tag"
 import FirstClimateIcon from "@/components/icons/FirstClimate"
 // import NzzIcon from "@/components/icons/Nzz"
 
