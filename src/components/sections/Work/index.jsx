@@ -20,7 +20,8 @@ import FirstClimateIcon from "@/components/icons/FirstClimate"
 
 const projects = [
   {
-    name: "Dynamic Impact Report",
+    link: "https://medium.com/@buried-signals/case-study-interactive-impact-report-for-seeds-of-peaces-30th-anniversary-0471938e2794",
+    name: "Interactive Impact Report",
     media: {
       type: "image",
       src: "./videos/video-project-sop.mp4",
