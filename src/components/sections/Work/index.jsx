@@ -23,12 +23,12 @@ const projects = [
     link: "https://medium.com/@buried-signals/case-study-interactive-impact-report-for-seeds-of-peaces-30th-anniversary-0471938e2794",
     name: "Interactive Impact Report",
     media: {
-      type: "image",
+      type: "video",
       src: "./videos/video-project-sop.mp4",
       alt: "Cover image of the project Seeds of Peace"
     },
     infos: {
-      description: "We produced a dynamic and static impact report for ",
+      description: "An interactive and static impact report with cartography for ",
       provider: "Seeds of Peace"
     }
   },
