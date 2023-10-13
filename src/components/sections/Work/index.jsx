@@ -23,7 +23,7 @@ const projects = [
     name: "Dynamic Impact Report",
     media: {
       type: "image",
-      src: "./images/img-project-seedsofpeace.png",
+      src: "./videos/video-project-sop.mp4",
       alt: "Cover image of the project Seeds of Peace"
     },
     infos: {
