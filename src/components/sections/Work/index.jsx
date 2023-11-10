@@ -10,28 +10,19 @@ import HoverMediaText from "@/components/texts/HoverMedia"
 // Icons
 import Arrow02Icon from "@/components/icons/Arrow02"
 import Section from "@/components/modules/Section"
-import OnuIcon from "@/components/icons/Onu"
-import QuatarFondationIcon from "@/components/icons/QuatarFondation"
+// import OnuIcon from "@/components/icons/Onu"
+// import QuatarFondationIcon from "@/components/icons/QuatarFondation"
 import RedbullIcon from "@/components/icons/Redbull"
 import OfpeaceIcon from "@/components/icons/Ofpeace"
-import AlephIcon from "@/components/icons/Aleph"
+// import AlephIcon from "@/components/icons/Aleph"
+// import TagIcon from "@/components/icons/Tag"
 import FirstClimateIcon from "@/components/icons/FirstClimate"
+import WhoIcon from "@/components/icons/Who"
+import TheWorldBankIcon from "@/components/icons/TheWorldBank"
+import TheBureauInvestigatesIcon from "@/components/icons/TheBureauInvestigates"
 // import NzzIcon from "@/components/icons/Nzz"
 
 const projects = [
-  {
-    link: "https://medium.com/@buried-signals/case-study-interactive-impact-report-for-seeds-of-peaces-30th-anniversary-0471938e2794",
-    name: "Interactive Impact Report",
-    media: {
-      type: "video",
-      src: "./videos/video-project-sop.mp4",
-      alt: "Cover image of the project Seeds of Peace"
-    },
-    infos: {
-      description: "An interactive and static impact report with cartography for ",
-      provider: "Seeds of Peace"
-    }
-  },
   {
     name: "Website Design & Visualization",
     media: {
@@ -143,12 +134,12 @@ const projects = [
 const clients = [
   {
     // link: "https://linesofcontrol.com/",
-    icon: (() => <OnuIcon />)(),
+    icon: (() => <WhoIcon />)(),
     // widthIcon: "74px"
   },
   {
     // link: "https://linesofcontrol.com/",
-    icon: (() => <QuatarFondationIcon />)(),
+    icon: (() => <TheWorldBankIcon />)(),
     // widthIcon: "191px"
   },
   {
@@ -168,7 +159,7 @@ const clients = [
   },
   {
     // link: "https://linesofcontrol.com/",
-    icon: (() => <AlephIcon />)(),
+    icon: (() => <TheBureauInvestigatesIcon />)(),
     // widthIcon: "166px"
   }
 ]

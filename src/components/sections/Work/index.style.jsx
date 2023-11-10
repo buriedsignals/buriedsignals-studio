@@ -35,6 +35,8 @@ export const WorkStyle = styled.div`
       svg {
         display: block;
         width: 100%;
+        max-width: 150px;
+        max-height: 100px;
         margin: 0 auto;
       }
     } 
