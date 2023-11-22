@@ -107,7 +107,7 @@ const projects = [
       description: "Information design and data visualization in a PDF report for",
       provider: "Talent Acquisition Group"
     }
-  }
+  },
   {
     name: "Data-led Experience",
     media: {
