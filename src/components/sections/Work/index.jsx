@@ -28,7 +28,7 @@ const projects = [
     name: "Interactive Case Study",
     media: {
       type: "video",
-      src: "./images/video-project-polio.mp4",
+      src: "./videos/video-project-polio.mp4",
       alt: "Cover video of the project Polio Eradication"
     },
     infos: {
@@ -40,7 +40,7 @@ const projects = [
     name: "Interactive Impact Report",
     media: {
       type: "video",
-      src: "./images/video-project-sop.mp4",
+      src: "./videos/video-project-sop.mp4",
       alt: "Cover video of the project Seeds of Peace"
     },
     infos: {
