@@ -75,7 +75,7 @@ export default function Home({ ...props }) {
     <Section>
       <HomeStyle ref={templateRef} { ...props } className="container-module-large">      
         <div ref={titleRef} className="titles">
-          <h1 className="typography-05">A <HoverImageText media={{ type: "video", src: "./videos/video-project-polio.mp4", alt: "" }}><SpanGradientText hover={ true } revert={ true }>data&nbsp;storytelling</SpanGradientText></HoverImageText> and <HoverImageText media={{ type: "video", src: "./videos/video-project-sop.mp4" }}><SpanGradientText hover={ true } revert={ true }>visual&nbsp;communications</SpanGradientText></HoverImageText> studio.</h1>
+          <h1 className="typography-05">A <HoverImageText media={{ type: "video", src: "./videos/video-project-polio.mp4", alt: "" }}><SpanGradientText hover={ true } revert={ true }>data&nbsp;storytelling</SpanGradientText></HoverImageText> and <HoverImageText media={{ type: "video", src: "./videos/video-project-lines.mp4" }}><SpanGradientText hover={ true } revert={ true }>visual&nbsp;communications</SpanGradientText></HoverImageText> studio.</h1>
           <h2 className="typography-12">I help organisations solve complex communication problems by transforming their research or data into impactful visual content.</h2>
         </div>
         <PopupModule className="visualization-popup" titleButton="Pricing" callBackButtonPopup={ buttonPopup }>
