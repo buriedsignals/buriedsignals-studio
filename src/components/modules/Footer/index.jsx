@@ -23,7 +23,7 @@ export default function Footer() {
           <div className="buried">
             <a href="https://buriedsignals.com" className="typography-02" target="_blank" rel="noopener noreferrer">Magazine</a>
             <Link href="/"><a className="typography-02">Studio</a></Link>
-            <a href="https://buriedsignals.com/membership" className="typography-02" target="_blank" rel="noopener noreferrer">Membership</a>
+            <a href="https://buriedsignals.com/supporters" className="typography-02" target="_blank" rel="noopener noreferrer">Supporters</a>
             <a href="https://buriedsignals.substack.com" className="typography-02" target="_blank" rel="noopener noreferrer">Subscribe</a>
             <a href="https://buriedsignals.com/about" className="typography-02" target="_blank" rel="noopener noreferrer">About</a>
           </div>
