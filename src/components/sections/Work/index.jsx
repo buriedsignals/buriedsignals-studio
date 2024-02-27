@@ -24,6 +24,31 @@ import TheBureauInvestigatesIcon from "@/components/icons/TheBureauInvestigates"
 
 const projects = [
   {
+    link: "https://buried-signals.medium.com/case-study-animated-map-scrollytelling-for-the-who-2c93fa7cda63",
+    name: "Interactive Case Study",
+    media: {
+      type: "video",
+      src: "./videos/video-project-polio.mp4",
+      alt: "Cover video of the project Polio Eradication"
+    },
+    infos: {
+      description: "Animated cartography and scrollytelling on polio eradication for the",
+      provider: "WHO"
+    }
+  },{
+    link: "https://buried-signals.medium.com/case-study-interactive-impact-report-for-seeds-of-peaces-30th-anniversary-0471938e2794",
+    name: "Interactive Impact Report",
+    media: {
+      type: "video",
+      src: "./videos/video-project-sop.mp4",
+      alt: "Cover video of the project Seeds of Peace"
+    },
+    infos: {
+      description: "Interactive and static impact reports for",
+      provider: "Seeds of Peace"
+    }
+  },
+  {
     name: "Website Design & Visualization",
     media: {
       type: "image",
@@ -81,18 +106,6 @@ const projects = [
     infos: {
       description: "Information design and data visualization in a PDF report for",
       provider: "Talent Acquisition Group"
-    }
-  },
-  {
-    link: "https://gather.seedsofpeace.org/",
-    name: "Promo Film & Website",
-    media: {
-      type: "video",
-      src: "./videos/video-project-gather.mp4",
-    },
-    infos: {
-      description: "An NGO promotion video using archived footage, with website design and development for",
-      provider: "Seeds of Peace"
     }
   },
   {
