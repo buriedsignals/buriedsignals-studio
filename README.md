@@ -5,7 +5,7 @@
 | Name              | URL | Informations |
 | ----------------- | --- | ------------ |
 | **Developement**  | [http://localhost:3000](http://localhost:3000) | `N/A` |
-| **Production**    | [https://www.studio.buriedsignals.com/](https://www.studio.buriedsignals.com/) | `N/A` |
+| **Production**    | [https://www.studio.tomvaillant.com/](https://www.studio.tomvaillant.com/) | `N/A` |
 
 #### Others :
 - 📡 [Vercel deployment](https://vercel.com/buried-signals/studio)

@@ -13,7 +13,7 @@ import Layout from '@/components/layouts';
 
 // Metas
 const title = 'Buried Signals Studio'
-const url = 'https://www.studio.buriedsignals.com/'
+const url = 'https://www.studio.tomvaillant.com/'
 const description = "A data storytelling and visual communications studio."
 const keywords = 'dataviz, information, design, communication, visualisation, narrative, interactive, visual, journalism, awards, resources, insights, courses, community, data'
 const author = 'Buried Signals'

@@ -21,20 +21,20 @@ export default function Footer() {
             <a href="https://medium.com/@Buried-Signals" className="network" target="_blank" rel="noopener noreferrer"><MediumIcon /></a>
           </div>
           <div className="buried">
-            <a href="https://buriedsignals.com" className="typography-02" target="_blank" rel="noopener noreferrer">Magazine</a>
+            <a href="https://tomvaillant.com" className="typography-02" target="_blank" rel="noopener noreferrer">Magazine</a>
             <Link href="/"><a className="typography-02">Studio</a></Link>
-            <a href="https://buriedsignals.com/supporters" className="typography-02" target="_blank" rel="noopener noreferrer">Supporters</a>
+            <a href="https://tomvaillant.com/supporters" className="typography-02" target="_blank" rel="noopener noreferrer">Supporters</a>
             <a href="https://buriedsignals.substack.com" className="typography-02" target="_blank" rel="noopener noreferrer">Subscribe</a>
-            <a href="https://buriedsignals.com/about" className="typography-02" target="_blank" rel="noopener noreferrer">About</a>
+            <a href="https://tomvaillant.com/about" className="typography-02" target="_blank" rel="noopener noreferrer">About</a>
           </div>
         </div>
         <div className="infos">
           <div className="legal">
             <p className="typography-13">Zurich, Switzerland</p>
             <a href="mailto:tom@buriedsignals.com" className="typography-13" target="_blank" rel="noopener noreferrer">tom@buriedsignals.com</a>
-            <p className="copyright typography-13">© 2023 Buried Signals. See <a href="https://buriedsignals.com/privacy" target="_blank" rel="noopener noreferrer">Privacy</a>, <a href="https://buriedsignals.com/terms" target="_blank" rel="noopener noreferrer">Terms</a> and <a href="https://buriedsignals.com/notice" target="_blank" rel="noopener noreferrer">Information Collection Notice</a></p>
+            <p className="copyright typography-13">© 2023 Buried Signals. See <a href="https://tomvaillant.com/privacy" target="_blank" rel="noopener noreferrer">Privacy</a>, <a href="https://tomvaillant.com/terms" target="_blank" rel="noopener noreferrer">Terms</a> and <a href="https://tomvaillant.com/notice" target="_blank" rel="noopener noreferrer">Information Collection Notice</a></p>
           </div>
-          <a href="https://buriedsignals.com" className="logo" target="_blank" rel="noopener noreferrer"><LogoIcon colored={ false } /></a>
+          <a href="https://tomvaillant.com" className="logo" target="_blank" rel="noopener noreferrer"><LogoIcon colored={ false } /></a>
         </div>
       </div>
     </FooterStyle>
