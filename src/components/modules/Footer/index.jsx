@@ -15,16 +15,15 @@ export default function Footer() {
       <div className="footer-container container-module-extra-extra-large">
         <div className="links">
           <div className="socials">
-            <a href="https://www.instagram.com/buriedsignals" className="network" target="_blank" rel="noopener noreferrer"><InstagramIcon /></a>
-            <a href="https://twitter.com/buriedsignals" className="network" target="_blank" rel="noopener noreferrer"><TwitterIcon /></a>
-            <a href="https://www.linkedin.com/company/buried-signals" className="network" target="_blank" rel="noopener noreferrer"><LinkedinIcon /></a>
-            <a href="https://medium.com/@Buried-Signals" className="network" target="_blank" rel="noopener noreferrer"><MediumIcon /></a>
+            <a href="https://www.instagram.com/_tomvaillant" className="network" target="_blank" rel="noopener noreferrer"><InstagramIcon /></a>
+            <a href="https://twitter.com/_tomvaillant" className="network" target="_blank" rel="noopener noreferrer"><TwitterIcon /></a>
+            <a href="https://www.linkedin.com/in/tomvaillant/" className="network" target="_blank" rel="noopener noreferrer"><LinkedinIcon /></a>
+            <a href="https://medium.com/@tom-vaillant" className="network" target="_blank" rel="noopener noreferrer"><MediumIcon /></a>
           </div>
           <div className="buried">
             <a href="https://tomvaillant.com" className="typography-02" target="_blank" rel="noopener noreferrer">Magazine</a>
             <Link href="/"><a className="typography-02">Studio</a></Link>
-            <a href="https://tomvaillant.com/supporters" className="typography-02" target="_blank" rel="noopener noreferrer">Supporters</a>
-            <a href="https://buriedsignals.substack.com" className="typography-02" target="_blank" rel="noopener noreferrer">Subscribe</a>
+            <a href="https://buriedsignals.substack.com" className="typography-02" target="_blank" rel="noopener noreferrer">Newsletter</a>
             <a href="https://tomvaillant.com/about" className="typography-02" target="_blank" rel="noopener noreferrer">About</a>
           </div>
         </div>
