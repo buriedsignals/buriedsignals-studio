@@ -17,7 +17,7 @@ const url = 'https://www.studio.tomvaillant.com/'
 const description = "A data storytelling and visual communications studio."
 const keywords = 'dataviz, information, design, communication, visualisation, narrative, interactive, visual, journalism, awards, resources, insights, courses, community, data'
 const author = 'Tom Vaillant'
-const image = url + 'images/img-meta.jpg'
+const image = url + 'images/img-meta-1.jpg'
 
 function App({ Component, pageProps }) {
   // Nodes
