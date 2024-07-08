@@ -72,7 +72,7 @@ const projects = [
     }
   },
   {
-    link: "https://yemen.buriedsignals.com/",
+    link: "https://yemen.tomvaillant.com/",
     name: "Visual Investigation",
     media: {
       type: "video",
