@@ -64,7 +64,7 @@ export default function HeaderMobile() {
           <li className="page">
             <Link href="/#expertise">
               <a className={ `typography-01 ${ router.asPath == "/#expertise" ? "is-active" : "" }` } onClick={ onClickLink }>
-                Expertise
+                Investigations
               </a>
             </Link>
           </li>

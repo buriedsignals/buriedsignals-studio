@@ -14,8 +14,8 @@ import Layout from '@/components/layouts';
 // Metas
 const title = 'Tom Vaillant | Studio'
 const url = 'https://studio.tomvaillant.com/'
-const description = "A data storytelling and visual communications studio."
-const keywords = 'dataviz, information, design, communication, visualisation, narrative, interactive, visual, journalism, awards, resources, insights, courses, community, data'
+const description = "Visual journalist making data-driven video investigations."
+const keywords = 'dataviz, information, design, journalism, visualisation, narrative, interactive, visual, awards, resources, insights, courses, community, data'
 const author = 'Tom Vaillant'
 const image = url + 'images/img-meta-1.jpg'
 
