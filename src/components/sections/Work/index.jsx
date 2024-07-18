@@ -4,23 +4,19 @@ import { WorkStyle } from "./index.style"
 import { useEffect, useRef, useState } from "react"
 // Hooks
 import useGradientColor from "@/hooks/useGradientColor"
+// Modules
+import Section from "@/components/modules/Section"
 //Texts
 import TitleFirstIconText from "@/components/texts/TitleFirstIcon"
 import HoverMediaText from "@/components/texts/HoverMedia"
 // Icons
 import Arrow02Icon from "@/components/icons/Arrow02"
-import Section from "@/components/modules/Section"
-// import OnuIcon from "@/components/icons/Onu"
-// import QuatarFondationIcon from "@/components/icons/QuatarFondation"
-import RedbullIcon from "@/components/icons/Redbull"
-import OfpeaceIcon from "@/components/icons/Ofpeace"
-// import AlephIcon from "@/components/icons/Aleph"
-// import TagIcon from "@/components/icons/Tag"
-import FirstClimateIcon from "@/components/icons/FirstClimate"
-import WhoIcon from "@/components/icons/Who"
-import TheWorldBankIcon from "@/components/icons/TheWorldBank"
 import TheBureauInvestigatesIcon from "@/components/icons/TheBureauInvestigates"
-// import NzzIcon from "@/components/icons/Nzz"
+import TwentyIcon from "@/components/icons/Twenty"
+import NzzIcon from "@/components/icons/Nzz"
+import GristIcon from "@/components/icons/Grist"
+import PulitzerIcon from "@/components/icons/Pulitzer"
+import PuddingIcon from "@/components/icons/Pudding"
 
 const projects = [
   {
@@ -147,27 +143,27 @@ const projects = [
 const clients = [
   {
     // link: "https://linesofcontrol.com/",
-    icon: (() => <WhoIcon />)(),
+    icon: (() => <TwentyIcon />)(),
     // widthIcon: "74px"
   },
   {
     // link: "https://linesofcontrol.com/",
-    icon: (() => <TheWorldBankIcon />)(),
+    icon: (() => <GristIcon />)(),
     // widthIcon: "191px"
   },
   {
     // link: "https://linesofcontrol.com/",
-    icon: (() => <RedbullIcon />)(),
+    icon: (() => <NzzIcon />)(),
     // widthIcon: "101px"
   },
   {
     // link: "https://linesofcontrol.com/",
-    icon: (() => <OfpeaceIcon />)(),
+    icon: (() => <PulitzerIcon />)(),
     // widthIcon: "140px"
   },
   {
     // link: "https://linesofcontrol.com/",
-    icon: (() => <FirstClimateIcon />)(),
+    icon: (() => <PuddingIcon />)(),
     // widthIcon: "126px"
   },
   {
