@@ -31,7 +31,7 @@ export default function Footer() {
           <div className="legal">
             <p className="typography-13">Zurich, Switzerland</p>
             <a href="mailto:tom@buriedsignals.com" className="typography-13" target="_blank" rel="noopener noreferrer">tom@buriedsignals.com</a>
-            <p className="copyright typography-13">© 2023 Buried Signals. See <a href="https://tomvaillant.com/privacy" target="_blank" rel="noopener noreferrer">Privacy</a>, <a href="https://tomvaillant.com/terms" target="_blank" rel="noopener noreferrer">Terms</a> and <a href="https://tomvaillant.com/notice" target="_blank" rel="noopener noreferrer">Information Collection Notice</a></p>
+            <p className="copyright typography-13">© 2024 Tom Vaillant. See <a href="https://tomvaillant.com/privacy" target="_blank" rel="noopener noreferrer">Privacy</a>, <a href="https://tomvaillant.com/terms" target="_blank" rel="noopener noreferrer">Terms</a> and <a href="https://tomvaillant.com/notice" target="_blank" rel="noopener noreferrer">Information Collection Notice</a></p>
           </div>
           <a href="https://tomvaillant.com" className="logo" target="_blank" rel="noopener noreferrer"><LogoSimpleIcon colored={ false } /></a>
         </div>

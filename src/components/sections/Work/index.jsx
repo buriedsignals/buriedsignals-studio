@@ -43,18 +43,6 @@ const projects = [
       description: "Interactive and static impact reports for",
       provider: "Seeds of Peace"
     }
-  },
-  {
-    name: "Website Design & Visualization",
-    media: {
-      type: "image",
-      src: "./images/img-project-firstclimate.png",
-      alt: "Cover image of the project First Climate"
-    },
-    infos: {
-      description: "Biochar producer landing page and web app design with knowledge visualization for",
-      provider: "First Climate"
-    }
   },{
     link: "https://linesofcontrol.com/",
     name: "Interactive Documentary",
@@ -89,41 +77,6 @@ const projects = [
     infos: {
       description: "Illustration and scrollytelling for an investigation on tax fraud by",
       provider: "The Bureau Investigates"
-    }
-  },
-  {
-    link: "https://buried-signals.medium.com/report-design-for-talent-acquisition-group-e9b603ebf125",
-    name: "Report Design",
-    media: {
-      type: "image",
-      src: "./images/img-project-tag.png",
-      alt: "Cover image of the project Talent Search"
-    },
-    infos: {
-      description: "Information design and data visualization in a PDF report for",
-      provider: "Talent Acquisition Group"
-    }
-  },
-  {
-    name: "Data-led Experience",
-    media: {
-      type: "video",
-      src: "./videos/video-project-qf.mp4",
-    },
-    infos: {
-      description: "Information design and data visualization for Immersive Garden and the",
-      provider: "Qatar Foundation"
-    }
-  },
-  {
-    name: "Explanatory Video Animation",
-    media: {
-      type: "video",
-      src: "./videos/video-project-aleph.mp4",
-    },
-    infos: {
-      description: "A animated explanatory video of the company's strategy using data for",
-      provider: "Aleph"
     }
   },
   {
@@ -187,7 +140,7 @@ export default function Work({ ...props }) {
   return (
     <Section className="section-dark">
       <WorkStyle { ...props } id="work" className="container-module-large">
-        <TitleFirstIconText>What I've done</TitleFirstIconText>
+        <TitleFirstIconText>Work I've produced</TitleFirstIconText>
         <ul className="projects">
           { projects.map((project, index) => {
             return (

@@ -19,10 +19,10 @@ export default function Expertise({ ...props }) {
       <ExpertiseStyle { ...props } id="expertise">
         <div className="expertise-container container-module-large">
           <div className="studio-container">
-            <TitleFirstIconText className="test" letterColored={ true }>What I do</TitleFirstIconText>
-            <p className="typography-08">I use journalism, design and creative technology to help brands communicate visually to large audiences. Working alongside a team of trusted specialists to produce visual stories and reports for marketing teams.</p>
+            <TitleFirstIconText className="test" letterColored={ true }>Where I can help</TitleFirstIconText>
+            <p className="typography-08">I occasionally support independent investigative teams with visuals and interactives. As I'm working part-time with 20 Minuten in Switzerland these partnerships require lead time.</p>
           </div>
-          <PopupModule className="studio-popup" titleButton="F.A.Q">
+          {/*<PopupModule className="studio-popup" titleButton="F.A.Q">
             <Accordion titleButton="What do you do?" opened={ true }>
               <p className="typography-08">It's the use of design, media and creative technology to replace text with impactful content that engages broader audiences.</p>
               <p className="typography-08">I’ve applied this visual storytelling to different formats; for print, video, editorial, blogs, social media, PDFs, presentations, and microsites.</p>
@@ -33,23 +33,24 @@ export default function Expertise({ ...props }) {
               <p className="typography-08">My priority is to make sure clients get a return on their investment, not make absurd profits. I love working with impact-driven organisations (which is why I also offer discounts).</p>
             </Accordion>
           </PopupModule>
+          */}
         </div>
         <div className="client-container container-module-large">
           <div className="title-container">
-            <h3 className="typography-04">Clients turn to me when:</h3>
+            <h3 className="typography-04">Journalists turn to me when:</h3>
           </div>
           <ul className="clients">
             <li className="client">
               <Lottie animationData={ BubbleLottie } />
-              <p className="typography-08">They need to visualize complex information, whether in reports, video or presentations.</p>
+              <p className="typography-08">They need visuals for a complex investigation.</p>
             </li>
             <li className="client">
               <Lottie animationData={ GraphLottie } />
-              <p className="typography-08">They need to find and communicate the stories in their data, no matter the format.</p>
+              <p className="typography-08">They need to communicate stories in their data.</p>
             </li>
             <li className="client">
               <Lottie animationData={ GlobeLottie } />
-              <p className="typography-08">They want an explorable or explanatory web experience.</p>
+              <p className="typography-08">They want to partner on an investigation.</p>
             </li>
           </ul>
         </div>
