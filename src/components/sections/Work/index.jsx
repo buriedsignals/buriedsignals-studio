@@ -20,6 +20,18 @@ import PuddingIcon from "@/components/icons/Pudding"
 
 const projects = [
   {
+    link: "https://pudding.cool/2024/07/sleep-training/",
+    name: "Data Journalism",
+    media: {
+      type: "video",
+      src: "./videos/video-project-sleep.mp4",
+      alt: "Cover video of the Pudding sleep training project."
+    },
+    infos: {
+      description: "Visual data-driven essay on sleep training for",
+      provider: "The Pudding"
+    }
+  },{
     link: "https://buried-signals.medium.com/case-study-animated-map-scrollytelling-for-the-who-2c93fa7cda63",
     name: "Interactive Case Study",
     media: {
