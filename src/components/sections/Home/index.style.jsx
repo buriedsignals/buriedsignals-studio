@@ -3,12 +3,12 @@ import { down } from "styled-breakpoints";
 
 export const HomeStyle = styled.div`
   position: relative;
-  height: 60vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   z-index: 1;
   ${down('xs')} {
-    height: calc(100vh - 75px) !important;
+    height: calc(80vh - 100px) !important;
   }
   .titles {
     position: relative;

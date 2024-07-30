@@ -82,6 +82,7 @@ export const ExpertiseStyle = styled.div`
         position: relative;
         display: inline-block;
         padding-top: 40px;
+        padding-bottom: 20px;
         text-align: center;
       }
     }
