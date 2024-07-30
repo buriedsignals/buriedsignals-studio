@@ -38,7 +38,7 @@ export default function HeaderDesktop() {
           <li className="page">
             <Link href="/#expertise">
               <a className={ `typography-01 ${ router.asPath == "/#expertise" ? "is-active" : "" }` } onClick={ onClickLink }>
-                Investigations
+                Expertise
               </a>
             </Link>
           </li>
@@ -57,9 +57,9 @@ export default function HeaderDesktop() {
             </Link>
           </li>
           <li className="external">
-            <a href="https://calendly.com/_tomvaillant/30min" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:tom@buriedsignals.com" target="_blank" rel="noopener noreferrer">
               <div className="link-container">
-                <p className="typography-01">Book a call</p>
+                <p className="typography-01">Get in touch</p>
               </div>
             </a>
           </li>

@@ -17,12 +17,12 @@ export default function Expertise({ ...props }) {
   return (
     <Section>
       <ExpertiseStyle { ...props } id="expertise">
-        <div className="expertise-container container-module-large">
+        {/*<div className="expertise-container container-module-large">
           <div className="studio-container">
             <TitleFirstIconText className="test" letterColored={ true }>Where I can help</TitleFirstIconText>
             <p className="typography-08">I occasionally support independent investigative teams with visuals and interactives. As I'm working part-time with 20 Minuten in Switzerland these partnerships require lead time.</p>
           </div>
-          {/*<PopupModule className="studio-popup" titleButton="F.A.Q">
+          <PopupModule className="studio-popup" titleButton="F.A.Q">
             <Accordion titleButton="What do you do?" opened={ true }>
               <p className="typography-08">It's the use of design, media and creative technology to replace text with impactful content that engages broader audiences.</p>
               <p className="typography-08">I’ve applied this visual storytelling to different formats; for print, video, editorial, blogs, social media, PDFs, presentations, and microsites.</p>
@@ -33,8 +33,8 @@ export default function Expertise({ ...props }) {
               <p className="typography-08">My priority is to make sure clients get a return on their investment, not make absurd profits. I love working with impact-driven organisations (which is why I also offer discounts).</p>
             </Accordion>
           </PopupModule>
-          */}
         </div>
+        */}
         <div className="client-container container-module-large">
           <div className="title-container">
             <h3 className="typography-04">Journalists turn to me when:</h3>

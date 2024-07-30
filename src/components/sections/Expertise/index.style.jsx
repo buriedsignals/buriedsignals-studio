@@ -75,14 +75,13 @@ export const ExpertiseStyle = styled.div`
     }
   }
   .client-container {
-    padding-top: 100px;
     padding-bottom: 30px;
     .title-container {
       text-align: center;
       h3 {
         position: relative;
         display: inline-block;
-        padding: 100px 0 64px;
+        padding-top: 40px;
         text-align: center;
       }
     }

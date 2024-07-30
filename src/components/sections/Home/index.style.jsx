@@ -3,17 +3,18 @@ import { down } from "styled-breakpoints";
 
 export const HomeStyle = styled.div`
   position: relative;
-  height: 100vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   z-index: 1;
   ${down('xs')} {
-    height: calc(100vh - 100px) !important;
+    height: calc(100vh - 75px) !important;
   }
   .titles {
     position: relative;
     width: 738px;
     opacity: 0;
+    padding-top: 150px;
   }
   h1 {
     padding-bottom: 30px;
