@@ -57,7 +57,7 @@ export default function HeaderDesktop() {
             </Link>
           </li>
           <li className="external">
-            <a href="mailto:tom@buriedsignals.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://linktr.ee/tomvaillant" target="_blank" rel="noopener noreferrer">
               <div className="link-container">
                 <p className="typography-01">Get in touch</p>
               </div>

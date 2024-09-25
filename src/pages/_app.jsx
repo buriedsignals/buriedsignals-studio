@@ -12,9 +12,9 @@ import useScroll from '@/hooks/useScroll';
 import Layout from '@/components/layouts';
 
 // Metas
-const title = 'Tom Vaillant | Studio'
+const title = 'Tom Vaillant'
 const url = 'https://studio.tomvaillant.com/'
-const description = "Visual journalist reporting on data-driven stories."
+const description = "Visual and video journalist reporting on data-driven stories."
 const keywords = 'dataviz, information, design, journalism, visualisation, narrative, interactive, visual, awards, resources, insights, courses, community, data'
 const author = 'Tom Vaillant'
 const image = url + 'images/img-meta-1.jpg'

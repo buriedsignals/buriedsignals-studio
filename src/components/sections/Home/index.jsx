@@ -76,7 +76,7 @@ export default function Home({ ...props }) {
       <HomeStyle ref={templateRef} { ...props } className="container-module-large">      
         <div ref={titleRef} className="titles">
           <h1 className="typography-05"><HoverImageText media={{ type: "video", src: "./videos/video-project-polio.mp4", alt: "" }}><SpanGradientText hover={ true } revert={ true }>Visual&nbsp;</SpanGradientText></HoverImageText>and <HoverImageText media={{ type: "video", src: "./videos/video-project-lines.mp4" }}><SpanGradientText hover={ true } revert={ true }>video&nbsp;</SpanGradientText></HoverImageText>journalist</h1>
-          <h2 className="typography-12">based in Zurich, reporting on data-driven stories and researching the craft of visual storytelling.</h2>
+          <h2 className="typography-12">on staff for 20 Minuten in Zurich and reporting data-driven stories <a href="https://www.youtube.com/@_tomvaillant" target="_blank">on Youtube</a>.</h2>
         </div>
         {/* <PopupModule className="visualization-popup" titleButton="Pricing" callBackButtonPopup={ buttonPopup }>
         <h2 className="pricing typography-05">Pricing</h2>

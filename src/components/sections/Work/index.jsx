@@ -20,8 +20,20 @@ import PuddingIcon from "@/components/icons/Pudding"
 
 const projects = [
   {
+    link: "https://www.nzz.ch/wissenschaft/klimawandel-wasserschloss-schweiz-bis-2075-eine-visualisierung-der-auswirkungen-ld.1848954",
+    name: "Visual Journalism",
+    media: {
+      type: "video",
+      src: "./videos/video-project-nzz.mp4",
+      alt: "Cover video of the NZZ Swiss climate story."
+    },
+    infos: {
+      description: "Concept, cartography and spatial data analysis in a story for",
+      provider: "NZZ"
+    }
+  },{
     link: "https://pudding.cool/2024/07/sleep-training/",
-    name: "Data Journalism",
+    name: "Visual Journalism",
     media: {
       type: "video",
       src: "./videos/video-project-sleep.mp4",
