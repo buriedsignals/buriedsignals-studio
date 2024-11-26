@@ -30,7 +30,8 @@ const projects = [
     infos: {
       description: "Data investigation of Greenland's rare earth minerals for the",
       provider: "Pulitzer Center"
-    },
+    }
+  },
   {
     link: "https://www.nzz.ch/wissenschaft/klimawandel-wasserschloss-schweiz-bis-2075-eine-visualisierung-der-auswirkungen-ld.1848954",
     name: "Interactive and custom satellite mapping",
