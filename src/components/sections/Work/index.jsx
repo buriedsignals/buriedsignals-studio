@@ -20,8 +20,20 @@ import PuddingIcon from "@/components/icons/Pudding"
 
 const projects = [
   {
+    link: "https://pulitzercenter.org/projects/greenland-untapped",
+    name: "Data journalism grantee",
+    media: {
+      type: "image",
+      src: "./images/img-project-pulitzer.jpg",
+      alt: "Cover image of the Pulitzer Greenland story."
+    },
+    infos: {
+      description: "Data investigation of Greenland's rare earth minerals for the",
+      provider: "Pulitzer Center"
+    },
+  {
     link: "https://www.nzz.ch/wissenschaft/klimawandel-wasserschloss-schweiz-bis-2075-eine-visualisierung-der-auswirkungen-ld.1848954",
-    name: "Visual Journalism",
+    name: "Interactive and custom satellite mapping",
     media: {
       type: "video",
       src: "./videos/video-project-nzz.mp4",
@@ -33,7 +45,7 @@ const projects = [
     }
   },{
     link: "https://pudding.cool/2024/07/sleep-training/",
-    name: "Visual Journalism",
+    name: "Data Journalism",
     media: {
       type: "video",
       src: "./videos/video-project-sleep.mp4",
@@ -89,18 +101,6 @@ const projects = [
     infos: {
       description: "Visualising investigative data with mapping and editorial alongside",
       provider: "The Yemen Foundation"
-    }
-  },{
-    link: "https://www.thebureauinvestigates.com/stories/2023-07-31/the-sunshine-millionaire-how-one-man-took-130m-from-british-taxpayers?x-craft-preview=aY5cgBAy38&token=mO8ih9rfD0pUeYQin_X5lfCXAKvwMnaf",
-    name: "Editorial Visualization",
-    media: {
-      type: "video",
-      src: "./videos/video-project-tbij.mp4",
-      alt: "Animated scroll illustration of a tax fraud scheme"
-    },
-    infos: {
-      description: "Illustration and scrollytelling for an investigation on tax fraud by",
-      provider: "The Bureau Investigates"
     }
   },
   {
@@ -195,7 +195,7 @@ export default function Work({ ...props }) {
           }) }
         </ul>
         <div className="trust">
-          <h3 className="typography-04">They trusted me</h3>
+          <h3 className="typography-04">I've worked with</h3>
           <ul className="clients">
             { clients.map((client, index) => {
               return (
