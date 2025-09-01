@@ -10,10 +10,104 @@ export const HomeStyle = styled.div`
   ${down('xs')} {
     height: calc(80vh - 100px) !important;
   }
+  .logo-container {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    z-index: 10;
+    .bs-logo {
+      height: 40px;
+      width: auto;
+      ${down('md')} {
+        height: 35px;
+      }
+    }
+  }
+  
+  .header-about-link-container {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    z-index: 10;
+    
+    .header-about-link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: fit-content;
+      margin: 0px auto;
+      text-decoration: none;
+      color: #666666 !important;
+      border-radius: 4px;
+      text-transform: capitalize;
+      white-space: nowrap;
+      transition: color 0.25s linear;
+      
+      .typography-08 {
+        font-family: 'Inter', sans-serif !important;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0;
+        color: #666666 !important;
+        transition: 0.25s linear;
+      }
+      
+      p {
+        color: #666666 !important;
+        transition: 0.25s linear;
+      }
+      
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: -7.5px;
+        width: 100%;
+        height: 2.5px;
+        background-color: #666666;
+        transform-origin: 100% 50%;
+        transform: scaleX(1);
+        transition: 0.25s linear 0.125s;
+      }
+      
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: -7.5px;
+        width: 100%;
+        height: 2.5px;
+        background-color: #000000;
+        transform-origin: 0px 50%;
+        transform: scaleX(0);
+        transition: 0.25s linear;
+      }
+      
+      &:hover {        
+        .typography-08 {
+          color: #000000 !important;
+        }
+        
+        p {
+          color: #000000 !important;
+        }
+        
+        &:before {
+          transform: scaleX(0);
+        }
+        
+        &:after {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+  
   .titles {
     position: relative;
-    width: 738px;
-    opacity: 0;
+    width: 100%;
     padding-top: 150px;
   }
   h1 {
@@ -23,20 +117,7 @@ export const HomeStyle = styled.div`
     }
   }
   h2 {
-    max-width: 538px;
-  }
-  h1, h2 {
-    .line {
-      display: inline-block;
-      overflow: hidden;
-      .word {
-        transform: translate3D(0, 100px, 0);
-      }
-    }
-    .underline {
-      width: 0;
-      opacity: 0;
-    }
+    width: 100%;
   }
   .visualization-popup {
     .button-container-popup {

@@ -7,14 +7,27 @@ export const WorkStyle = styled.div`
     padding-top: 0;
   }
   h2 {
-    padding: 120px 0 65px;
+    padding: 6vw 0 4.5vw;
     ${down('md')} {
-      padding: 120px 0 35px;
+      padding: 3vw 0 2.5vw;
     }
   }
   .trust h3 {
-    padding-top: 120px;
-    text-align: center;
+    position: relative;
+    padding: 120px 0 65px;
+    text-align: left;
+    ${down('md')} {
+      padding: 60px 0 35px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: var(--color-green02);
+    }
   }
   .clients {
     display: flex;
@@ -25,12 +38,14 @@ export const WorkStyle = styled.div`
     column-gap: 60px;
     padding: 60px 0 30px;
     ${down('md')} {
-      // flex-direction: column;
+      row-gap: 15px;
+      column-gap: 30px;
+      padding: 30px 0 30px;
     }
     .client {
       width: auto;
       ${down('md')} {
-        width: 35%;
+        width: calc(33.333% - 20px);
       }
       svg {
         display: block;
@@ -81,10 +96,10 @@ export const WorkStyle = styled.div`
         color: var(--color-black);
         transition: all .35s cubic-bezier(0.12, 0, 0.39, 0);
         ${down('md')} {
-          padding: 15px 25px 15px 10px;
+          padding: 35px 0;
         }
         ${down('xs')} {
-          padding: 15px 7.5px;
+          padding: 35px 0;
         }
         .datas {
           display: flex;

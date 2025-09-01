@@ -14,7 +14,7 @@ import Layout from '@/components/layouts';
 // Metas
 const title = 'Tom Vaillant'
 const url = 'https://studio.tomvaillant.com/'
-const description = "Visual and video journalist reporting on data-driven stories."
+const description = "Visual journalist and technologist reporting on data-driven stories."
 const keywords = 'dataviz, information, design, journalism, visualisation, narrative, interactive, visual, awards, resources, insights, courses, community, data'
 const author = 'Tom Vaillant'
 const image = url + 'images/img-meta-1.jpg'
@@ -52,7 +52,8 @@ function App({ Component, pageProps }) {
         <meta property='og:site_name' content={ title } />
         <meta key='og-description' property='og:description' content={ description } />
         <meta name='viewport' content='width=device-width, minimum-scale=1, initial-scale=1.0, user-scalable=no' />
-        <link rel='shortcut icon' href='/icons/favicon.ico' />
+        <link rel='shortcut icon' href='/icons/favicon.png' />
+        <link rel='icon' type='image/png' href='/icons/favicon.png' />
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:site' content='@buriedsignals' />
         <meta key='tw-title' name='twitter:title' content={ title } />

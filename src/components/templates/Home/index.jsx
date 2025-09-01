@@ -5,7 +5,9 @@ import Layout from "@/components/layouts/main"
 // Sections
 import HomeSection from "@/components/sections/Home"
 import ExpertiseSection from "@/components/sections/Expertise"
+import VideosSection from "@/components/sections/Videos"
 import WorkSection from "@/components/sections/Work"
+import NewsletterSection from "@/components/sections/Newsletter"
 import ContactSection from "@/components/sections/Contact"
 // Modules
 import CanvasModule from "@/components/modules/Canvas"
@@ -51,7 +53,9 @@ export default function HomeTemplate() {
           <CanvasModule />
         </div>
         <ExpertiseSection />
+        <VideosSection />
         <WorkSection />
+        <NewsletterSection />
         <ContactSection />
       </HomeTemplateStyle>
     </Layout>

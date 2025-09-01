@@ -77,13 +77,25 @@ export const ExpertiseStyle = styled.div`
   .client-container {
     padding-bottom: 30px;
     .title-container {
-      text-align: center;
+      text-align: left;
       h3 {
         position: relative;
-        display: inline-block;
-        padding-top: 40px;
-        padding-bottom: 20px;
-        text-align: center;
+        display: block;
+        width: 100%;
+        padding: 120px 0 65px;
+        text-align: left;
+        ${down('md')} {
+          padding: 60px 0 30px;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 20px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: var(--color-black);
+        }
       }
     }
     .clients {
@@ -93,7 +105,7 @@ export const ExpertiseStyle = styled.div`
       column-gap: 107px;
       ${down('md')} {
         flex-wrap: wrap;
-        gap: 75px;
+        gap: 0px;
       }
       .client {
         display: flex;
@@ -101,6 +113,9 @@ export const ExpertiseStyle = styled.div`
         justify-content: center;
         align-items: center;
         max-width: 243px;
+        ${down('md')} {
+          margin-bottom: -25px;
+        }
         svg {
           position: relative
         }
@@ -108,6 +123,10 @@ export const ExpertiseStyle = styled.div`
           position: relative;
           padding-top: 27px;
           text-align: center;
+          ${down('md')} {
+            margin-top: -20px;
+            padding-top: 0px;
+          }
         }
       }
     }

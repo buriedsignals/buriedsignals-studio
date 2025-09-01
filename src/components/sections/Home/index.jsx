@@ -1,12 +1,7 @@
 // Styles
 import { HomeStyle } from "./index.style"
-// Scripts
-import SplitText from '@/scripts/SplitText';
 // Nodes
-import gsap, { Expo, Power2, Sine } from 'gsap';
-import { CustomEase } from "gsap/dist/CustomEase";
 // React
-import { useEffect, useRef, useState } from "react";
 // Modules
 import Section from "@/components/modules/Section";
 import PopupModule from "@/components/modules/Popup"
@@ -14,8 +9,6 @@ import PopupModule from "@/components/modules/Popup"
 import SpanGradientText from "@/components/texts/SpanGradient"
 import HoverImageText from "@/components/texts/HoverMedia";
 
-gsap.registerPlugin(CustomEase);
-gsap.registerPlugin(SplitText);
 
 const pricing = [
   { name: "Annual reports", price: "$ 8-16k" },
@@ -30,78 +23,21 @@ const pricing = [
 ]
 
 export default function Home({ ...props }) {
-  const templateRef = useRef()
-  const titleRef = useRef()
-  const [buttonPopup, setButtonPopup] = useState(0)
-  useEffect(() => {
-      if (titleRef.current) {
-        setTimeout(() => {
-          new SplitText(titleRef.current.querySelectorAll('h1, h2'), { type: 'lines,words', linesClass: 'line', wordsClass: 'word' });
-        }, 100)
-      }
-  }, [titleRef]);
-  useEffect(() => {
-    const timeline = new gsap.timeline();      
-    setTimeout(() => {
-      if (titleRef.current) {
-        timeline.set(titleRef.current, { opacity: 1, pointerEvents: 'none' });
-        // timeline.set(document.querySelector('.header'), { opacity: 0 });
-        // timeline.set(templateRef.current.querySelector('.visualization-popup'), { opacity: 0 });
-        // timeline.set(titleRef.current.querySelectorAll('.underline'), { width: 0, opacity: 0 });
-        const lines = titleRef.current.querySelectorAll('.line');
-        // lines.forEach((line, i) => {
-        //   timeline.set(line, { css: { overflow: 'hidden' } });
-        //   timeline.set(line.querySelectorAll('.word'), { y: 100 });
-        // });
-        lines.forEach((line, i) => {
-          if (line.textContent.length != 1) {
-            timeline.to(line.querySelectorAll('.word'), 0.75, { y: 0, ease: CustomEase.create("custom", "0.25, 0.1, 0.74, 0.91") }, i !== 0 ? '-=0.55' : '');
-          }
-        });
-        timeline.to(titleRef.current, 0, { pointerEvents: 'auto' });
-        timeline.to(titleRef.current.querySelectorAll('.underline'), 1, { width: '100%', opacity: 1, ease: Expo.easeInOut }, '-=.75');
-        timeline.to(document.querySelector('.header'), 0.5, { opacity: 1, y: 0, ease: CustomEase.create("custom", "0.25, 0.1, 0.74, 0.91") }, '-=0.75');
-        timeline.to(templateRef.current.querySelector('.visualization-popup .open-button-container-popup .circle-after'), 0.45, { scale: 1, ease: Power2.easeOut }, '-=0.8');
-        timeline.to(templateRef.current.querySelector('.visualization-popup .open-button-container-popup .circle-before'), 0.45, { scale: 1, ease: Power2.easeOut }, '-=0.8');
-        timeline.to(templateRef.current.querySelector('.visualization-popup .open-button-container-popup svg'), 0.5, { opacity: 1, x: '-50%', y: '-50%', rotation: 0, ease: Sine.easeOut }, '-=0.75');      
-        timeline.to(templateRef.current.querySelector('.visualization-popup .open-button-container-popup p'), 0.5, { x: 0, opacity: 1, ease: Sine.easeIn }, '-=0.75');
-      }
-    }, 100);
-    return () => {
-      timeline.kill()
-    }
-  }, [])
   return (
     <Section>
-      <HomeStyle ref={templateRef} { ...props } className="container-module-large">      
-        <div ref={titleRef} className="titles">
-          <h1 className="typography-05"><HoverImageText media={{ type: "video", src: "./videos/video-project-polio.mp4", alt: "" }}><SpanGradientText hover={ true } revert={ true }>Visual&nbsp;</SpanGradientText></HoverImageText>and <HoverImageText media={{ type: "video", src: "./videos/video-project-lines.mp4" }}><SpanGradientText hover={ true } revert={ true }>video&nbsp;</SpanGradientText></HoverImageText>journalist</h1>
-          <h2 className="typography-12">from Zurich reporting on data-driven investigations about geopolitics and culture.</h2>
+      <HomeStyle { ...props } className="container-module-large">
+        <div className="logo-container">
+          <img src="/icons/bs-logo.svg" alt="Buried Signals" className="bs-logo" />
         </div>
-        {/* <PopupModule className="visualization-popup" titleButton="Pricing" callBackButtonPopup={ buttonPopup }>
-        <h2 className="pricing typography-05">Pricing</h2>
-          <div className="description-visualization-popup">
-            <ul className="names">
-              { pricing.map((item, index) => {
-                return (
-                  <li key={ `name-${ index }` }>
-                    <p className="typography-08">{ item.name }</p>
-                  </li>
-                ) 
-              }) }
-            </ul>
-            <ul className="prices">
-              { pricing.map((item, index) => {
-                return (
-                  <li key={ `price-${ index }` }>
-                    <p className="typography-08">{ item.price }</p>
-                  </li>
-                ) 
-              }) }
-            </ul>
-          </div>
-        </PopupModule>
-        */}
+        <div className="header-about-link-container">
+          <a href="/about" className="header-about-link">
+            <p className="typography-08">About</p>
+          </a>
+        </div>
+        <div className="titles">
+          <h1 className="typography-04"><a href="https://www.youtube.com/@buriedsignals" target="_blank" rel="noopener noreferrer"><SpanGradientText hover={ true } revert={ true }>Visual&nbsp;</SpanGradientText></a>journalist and <a href="https://buriedsignals.substack.com/" target="_blank" rel="noopener noreferrer"><SpanGradientText hover={ true } revert={ true }>technologist</SpanGradientText></a></h1>
+          <h2 className="typography-12">based in 🇨🇭, reporting on data-driven stories with maps and charts.</h2>
+        </div>
       </HomeStyle>
     </Section>
   )

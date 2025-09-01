@@ -1,3 +1,3 @@
-import styled from "styled-components";
+import { BaseElement } from "@/components/common/BaseElement";
 
-export const SectionStyle = styled.div``
+export const SectionStyle = BaseElement

@@ -11,145 +11,10 @@ import TitleFirstIconText from "@/components/texts/TitleFirstIcon"
 import HoverMediaText from "@/components/texts/HoverMedia"
 // Icons
 import Arrow02Icon from "@/components/icons/Arrow02"
-import TheBureauInvestigatesIcon from "@/components/icons/TheBureauInvestigates"
-import TwentyIcon from "@/components/icons/Twenty"
-import NzzIcon from "@/components/icons/Nzz"
-import GristIcon from "@/components/icons/Grist"
-import PulitzerIcon from "@/components/icons/Pulitzer"
-import PuddingIcon from "@/components/icons/Pudding"
+// Data
+import { projects } from "@/data/projects"
+import { clients } from "@/data/clients"
 
-const projects = [
-  {
-    link: "https://pulitzercenter.org/projects/greenland-untapped",
-    name: "Data journalism grantee",
-    media: {
-      type: "image",
-      src: "./images/img-project-pulitzer.jpg",
-      alt: "Cover image of the Pulitzer Greenland story."
-    },
-    infos: {
-      description: "Data investigation of Greenland's rare earth minerals for the",
-      provider: "Pulitzer Center"
-    }
-  },
-  {
-    link: "https://www.nzz.ch/wissenschaft/klimawandel-wasserschloss-schweiz-bis-2075-eine-visualisierung-der-auswirkungen-ld.1848954",
-    name: "Interactive and custom satellite mapping",
-    media: {
-      type: "video",
-      src: "./videos/video-project-nzz.mp4",
-      alt: "Cover video of the NZZ Swiss climate story."
-    },
-    infos: {
-      description: "Concept, cartography and spatial data analysis in a story for",
-      provider: "NZZ"
-    }
-  },{
-    link: "https://pudding.cool/2024/07/sleep-training/",
-    name: "Data Journalism",
-    media: {
-      type: "video",
-      src: "./videos/video-project-sleep.mp4",
-      alt: "Cover video of the Pudding sleep training project."
-    },
-    infos: {
-      description: "Visual data-driven essay on sleep training for",
-      provider: "The Pudding"
-    }
-  },{
-    link: "https://buried-signals.medium.com/case-study-animated-map-scrollytelling-for-the-who-2c93fa7cda63",
-    name: "Interactive Case Study",
-    media: {
-      type: "video",
-      src: "./videos/video-project-polio.mp4",
-      alt: "Cover video of the project Polio Eradication"
-    },
-    infos: {
-      description: "Animated cartography and scrollytelling on polio eradication for the",
-      provider: "WHO"
-    }
-  },{
-    link: "https://buried-signals.medium.com/case-study-interactive-impact-report-for-seeds-of-peaces-30th-anniversary-0471938e2794",
-    name: "Interactive Impact Report",
-    media: {
-      type: "video",
-      src: "./videos/video-project-sop.mp4",
-      alt: "Cover video of the project Seeds of Peace"
-    },
-    infos: {
-      description: "Interactive and static impact reports for",
-      provider: "Seeds of Peace"
-    }
-  },{
-    link: "https://linesofcontrol.com/",
-    name: "Interactive Documentary",
-    media: {
-      type: "video",
-      src: "./videos/video-project-lines.mp4",
-    },
-    infos: {
-      description: "An interactive web documentary in partnership with",
-      provider: "Stand With Kashmir"
-    }
-  },
-  {
-    link: "https://yemen.tomvaillant.com/",
-    name: "Visual Investigation",
-    media: {
-      type: "video",
-      src: "./videos/video-project-yemen.mp4",
-    },
-    infos: {
-      description: "Visualising investigative data with mapping and editorial alongside",
-      provider: "The Yemen Foundation"
-    }
-  },
-  {
-    link: "https://www.youtube.com/watch?v=IhYN0Ayo0i0",
-    name: "Film Documentary",
-    media: {
-      type: "video",
-      src: "./videos/video-project-kapture.mp4",
-    },
-    infos: {
-      description: "Web documentary about the history of parkour in Gaza for",
-      provider: "Red Bull"
-    }
-  }
-]
-
-const clients = [
-  {
-    // link: "https://linesofcontrol.com/",
-    icon: (() => <TwentyIcon />)(),
-    // widthIcon: "74px"
-  },
-  {
-    // link: "https://linesofcontrol.com/",
-    icon: (() => <GristIcon />)(),
-    // widthIcon: "191px"
-  },
-  {
-    // link: "https://linesofcontrol.com/",
-    icon: (() => <NzzIcon />)(),
-    // widthIcon: "101px"
-  },
-  {
-    // link: "https://linesofcontrol.com/",
-    icon: (() => <PulitzerIcon />)(),
-    // widthIcon: "140px"
-  },
-  {
-    // link: "https://linesofcontrol.com/",
-    icon: (() => <PuddingIcon />)(),
-    // widthIcon: "126px"
-  },
-  {
-    // link: "https://linesofcontrol.com/",
-    icon: (() => <TheBureauInvestigatesIcon />)(),
-    // widthIcon: "166px"
-  }
-]
 
 export default function Work({ ...props }) {
   const colors = useGradientColor("#60d09f", "#377A5D", projects.length)
@@ -165,7 +30,7 @@ export default function Work({ ...props }) {
   return (
     <Section className="section-dark">
       <WorkStyle { ...props } id="work" className="container-module-large">
-        <TitleFirstIconText>Work I've produced</TitleFirstIconText>
+        <h2 className="typography-05">Data stories you can explore 📊</h2>
         <ul className="projects">
           { projects.map((project, index) => {
             return (
@@ -175,7 +40,7 @@ export default function Work({ ...props }) {
                     <a className="datas-container" href={ project.link } target="_blank" rel="noopener noreferrer" onMouseEnter={ (e) => onMouseEnter(e, index) } onMouseLeave={ (e) => onMouseLeave(e) }>
                       <div className="datas">
                         <p className="name typography-03">{ project.name }</p>
-                        <p className="infos typography-06">{ project.infos.description } <span className="provider typography-07">{ project.infos.provider }</span></p>
+                        <p className="infos typography-06">{ project.infos.description }</p>
                       </div>
                       <Arrow02Icon />
                     </a>
@@ -185,7 +50,7 @@ export default function Work({ ...props }) {
                     <div className="datas-container no-link"  onMouseEnter={ (e) => onMouseEnter(e, index) } onMouseLeave={ (e) => onMouseLeave(e) }>
                         <div className="datas">
                           <p className="name typography-03">{ project.name }</p>
-                          <p className="infos typography-06">{ project.infos.description } <span className="provider typography-07">{ project.infos.provider }</span></p>
+                          <p className="infos typography-06">{ project.infos.description }</p>
                         </div>
                         <Arrow02Icon />
                     </div>
@@ -196,7 +61,7 @@ export default function Work({ ...props }) {
           }) }
         </ul>
         <div className="trust">
-          <h3 className="typography-04">I've worked with</h3>
+          <h3 className="typography-05">I've worked with 🤝</h3>
           <ul className="clients">
             { clients.map((client, index) => {
               return (

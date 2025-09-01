@@ -37,20 +37,20 @@ export default function Expertise({ ...props }) {
         */}
         <div className="client-container container-module-large">
           <div className="title-container">
-            <h3 className="typography-04">People turn to me when:</h3>
+            <h3 className="typography-05">What I'm up to 👀</h3>
           </div>
           <ul className="clients">
             <li className="client">
               <Lottie animationData={ BubbleLottie } />
-              <p className="typography-08">They need visuals for a complex investigation.</p>
+              <p className="typography-08">Creating data-driven videos on Youtube</p>
             </li>
             <li className="client">
               <Lottie animationData={ GraphLottie } />
-              <p className="typography-08">They need to communicate stories in their data.</p>
+              <p className="typography-08">Open-sourcing my methods on Substack.</p>
             </li>
             <li className="client">
               <Lottie animationData={ GlobeLottie } />
-              <p className="typography-08">They want to partner on an investigation.</p>
+              <p className="typography-08">Building AI tools to empower journalists.</p>
             </li>
           </ul>
         </div>

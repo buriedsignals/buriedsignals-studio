@@ -142,6 +142,31 @@ button {
   --color-green01: #4DAB83;
   --color-green02: #71F2BA;
   --color-green03: #377A5D;
+  
+  /* Typography system */
+  --font-family-primary: 'Gilroy';
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  
+  /* Type scale */
+  --type-scale-xs: 14px;
+  --type-scale-sm: 15px;
+  --type-scale-md: 17px;
+  --type-scale-lg: 25px;
+  --type-scale-xl: 37px;
+  --type-scale-2xl: 56px;
+  --type-scale-3xl: 85px;
+  
+  /* Line heights */
+  --line-height-tight: 95.52%;
+  --line-height-snug: 105%;
+  --line-height-normal: 125%;
+  --line-height-relaxed: 140%;
+  
+  /* Letter spacing */
+  --letter-spacing-tight: 0.04em;
+  --letter-spacing-normal: 0.06em;
   --color-green04: #5AC396;
   --color-green05: #4FAA82;
 }
@@ -238,7 +263,7 @@ button, a {
   font-family: 'Gilroy';
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 60px;
   line-height: 105%;
 }
 
@@ -280,7 +305,7 @@ button, a {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
-  font-size: 50px;
+  font-size: 25px;
   line-height: 105%;
 }
 
@@ -330,7 +355,7 @@ button, a {
   }
   
   .typography-09 {
-    font-size: 30px;
+    font-size: 18px;
   }
 
   .typography-12 {
@@ -373,56 +398,65 @@ button, a {
   padding-left: 60px;
 }
 
+.site-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.site-wrapper-dark {
+  width: 80%;
+  margin: 0 auto;
+  background: #000;
+}
+
+@media (min-width: 1920px) {
+  .site-wrapper {
+    width: 70%;
+  }
+  .site-wrapper-dark {
+    width: 70%;
+  }
+}
+
+@media (max-width: 955px) {
+  .site-wrapper {
+    width: 90%;
+  }
+  .site-wrapper-dark {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .site-wrapper {
+    width: 85%;
+  }
+  .site-wrapper-dark {
+    width: 85%;
+  }
+}
+
 .container-module-large {
   width: 100%;
-  max-width: 1335px;
   margin: 0 auto;
-  padding-right: 60px;
-  padding-left: 60px;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .container-module-medium {
   width: 100%;
-  max-width: 1277px;
   margin: 0 auto;
-  padding-right: 60px;
-  padding-left: 60px;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .container-module-small {
   width: 100%;
-  max-width: 694px;
   margin: 0 auto;
-  padding-right: 60px;
-  padding-left: 60px;
+  padding-right: 0;
+  padding-left: 0;
 }
 
-@media screen and (max-width: 955px) {
-  .container-module-extra-extra-large {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
-  .container-module-extra-large {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
-  .container-module-large {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
-  .container-module-medium {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
-  .container-module-small {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-}
 
 .test {
   /* position: relative; */
