@@ -13,7 +13,7 @@ import Layout from '@/components/layouts';
 
 // Metas
 const title = 'Buried Signals'
-const url = 'https://studio.tomvaillant.com/'
+const url = 'https://buriedsignals.com/'
 const description = "Visual journalist and technologist reporting on data-driven stories."
 const keywords = 'dataviz, information, design, journalism, visualisation, narrative, interactive, visual, awards, resources, insights, courses, community, data'
 const author = 'Tom Vaillant'
@@ -54,6 +54,9 @@ function App({ Component, pageProps }) {
         <meta name='viewport' content='width=device-width, minimum-scale=1, initial-scale=1.0, user-scalable=no' />
         <link rel='shortcut icon' href='/icons/favicon.png' />
         <link rel='icon' type='image/png' href='/icons/favicon.png' />
+        <link rel='apple-touch-icon' href='/icons/favicon.png' />
+        <link rel='icon' type='image/png' sizes='32x32' href='/icons/favicon.png' />
+        <link rel='icon' type='image/png' sizes='16x16' href='/icons/favicon.png' />
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:site' content='@buriedsignals' />
         <meta key='tw-title' name='twitter:title' content={ title } />
