@@ -27,7 +27,8 @@ export const NewsletterStyle = styled.div`
     }
     
     ${down('md')} {
-      padding: 4vh 30px;
+      padding: 10vh 30px;
+      gap: 4vh;
       
       &::after {
         border-bottom: 30px solid #000000;
@@ -36,9 +37,9 @@ export const NewsletterStyle = styled.div`
     }
     
     ${down('xs')} {
-      padding: 3vh 30px;
-      gap: 1vh;
-      
+      padding: 10vh 30px;
+      gap: 4vh;
+
       &::after {
         border-bottom: 25px solid #000000;
         border-left: 25px solid transparent;
@@ -62,10 +63,6 @@ export const NewsletterStyle = styled.div`
       margin-bottom: 37.5px;
       color: #1c1e1f !important;
       text-align: center;
-      
-      ${down('md')} {
-        width: 95%;
-      }
       
       .typography-09 {
         font-family: 'Space Grotesk', sans-serif !important;

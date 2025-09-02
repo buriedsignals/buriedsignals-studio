@@ -32,7 +32,7 @@ export const ContactStyle = styled.div`
       overflow: visible;
       
       ${down('md')} {
-        font-size: 28px !important;
+        font-size: 40px !important;
       }
     }
   }

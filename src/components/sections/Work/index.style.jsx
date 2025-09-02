@@ -17,7 +17,7 @@ export const WorkStyle = styled.div`
     padding: 120px 0 65px;
     text-align: left;
     ${down('md')} {
-      padding: 60px 0 35px;
+      padding: 84px 0 49px;
     }
     &::after {
       content: '';

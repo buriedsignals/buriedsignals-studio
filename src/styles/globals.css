@@ -263,7 +263,7 @@ button, a {
   font-family: 'Gilroy';
   font-style: normal;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 80px;
   line-height: 105%;
 }
 
@@ -350,12 +350,17 @@ button, a {
     font-size: 12px;
   }
 
+  .typography-04 {
+    font-size: clamp(8vh, 8vh, 24vh);
+  }
+
   .typography-05 {
     font-size: 40px;
   }
   
   .typography-09 {
-    font-size: 18px;
+    font-size: 28px;
+    line-height: 110%;
   }
 
   .typography-12 {
@@ -429,10 +434,10 @@ button, a {
 
 @media (max-width: 400px) {
   .site-wrapper {
-    width: 85%;
+    width: 92%;
   }
   .site-wrapper-dark {
-    width: 85%;
+    width: 92%;
   }
 }
 

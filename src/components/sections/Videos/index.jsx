@@ -6,14 +6,9 @@ import Section from "@/components/modules/Section"
 import TitleFirstIconText from "@/components/texts/TitleFirstIcon"
 
 const videos = [
-  {
-    title: "Latest Investigation", 
-    url: "https://www.youtube.com/embed/0OhlEgf_lew"
-  },
-  {
-    title: "Latest Investigation",
-    url: "https://www.youtube.com/embed/PnNuV4UNJiQ"
-  }
+  "https://www.youtube.com/embed/0OhlEgf_lew",
+  "https://www.youtube.com/embed/PnNuV4UNJiQ",
+  "https://www.youtube.com/embed/7iFOjVrf7Xg"
 ]
 
 export default function Videos({ ...props }) {
@@ -22,13 +17,13 @@ export default function Videos({ ...props }) {
       <VideosStyle { ...props } id="videos" className="container-module-large">
         <h2 className="typography-05">Latest video investigations 📹</h2>
         <div className="videos-grid">
-          { videos.map((video, index) => {
+          { videos.map((videoUrl, index) => {
             return (
               <div className="video-item" key={ index }>
                 <div className="video-embed">
                   <iframe
-                    src={video.url}
-                    title={video.title}
+                    src={videoUrl}
+                    title={`Video ${index + 1}`}
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen

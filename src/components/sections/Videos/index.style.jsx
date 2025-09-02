@@ -24,15 +24,14 @@ export const VideosStyle = styled.div`
   
   .videos-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
-    margin-top: 60px;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+    max-width: 100%;
     
     ${down('md')} {
       grid-template-columns: 1fr;
+      margin-top: 10px;
       gap: 50px;
     }
     
