@@ -352,9 +352,10 @@ button, a {
 
   .typography-04 {
     font-size: 9vh;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
+    word-wrap: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+    word-break: normal;
     max-width: 100%;
   }
 

@@ -112,18 +112,10 @@ export const HomeStyle = styled.div`
     width: 100%;
     padding-top: 150px;
     max-width: 100%;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
   }
   h1 {
     padding-bottom: 30px;
     max-width: 100%;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    ${down('md')} {
-      word-break: break-word;
-      hyphens: auto;
-    }
     .media-hover-container {
       display: inline-block;
     }
