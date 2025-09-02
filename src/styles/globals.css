@@ -351,7 +351,11 @@ button, a {
   }
 
   .typography-04 {
-    font-size: clamp(8vh, 8vh, 24vh);
+    font-size: 9vh;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    max-width: 100%;
   }
 
   .typography-05 {
@@ -365,6 +369,24 @@ button, a {
 
   .typography-12 {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .typography-04 {
+    font-size: 8vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .typography-04 {
+    font-size: 7vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .typography-04 {
+    font-size: 5vh;
   }
 }
 

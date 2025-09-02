@@ -31,8 +31,10 @@ export default function Home({ ...props }) {
           <img src="/icons/bs-logo.svg" alt="Buried Signals" className="bs-logo" />
         </div>
         <div className="header-about-link-container">
-          <Link href="/about" className="header-about-link">
-            <p className="typography-08">About</p>
+          <Link href="/about">
+            <span className="header-about-link">
+              <p className="typography-08">About</p>
+            </span>
           </Link>
         </div>
         <div className="titles">

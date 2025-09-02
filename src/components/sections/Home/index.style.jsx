@@ -29,19 +29,21 @@ export const HomeStyle = styled.div`
     top: 30px;
     right: 0px;
     z-index: 10;
+    pointer-events: auto;
     
     .header-about-link {
       position: relative;
       display: flex;
       align-items: center;
       height: fit-content;
-      margin: 0px auto;
       text-decoration: none;
       color: #666666 !important;
       border-radius: 4px;
       text-transform: capitalize;
       white-space: nowrap;
       transition: color 0.25s linear;
+      cursor: pointer !important;
+      padding: 8px;
       
       .typography-08 {
         font-family: 'Inter', sans-serif !important;
@@ -63,7 +65,7 @@ export const HomeStyle = styled.div`
         content: "";
         position: absolute;
         left: 0px;
-        bottom: -7.5px;
+        bottom: -3px;
         width: 100%;
         height: 2.5px;
         background-color: #666666;
@@ -76,7 +78,7 @@ export const HomeStyle = styled.div`
         content: "";
         position: absolute;
         left: 0px;
-        bottom: -7.5px;
+        bottom: -3px;
         width: 100%;
         height: 2.5px;
         background-color: #000000;
@@ -109,9 +111,19 @@ export const HomeStyle = styled.div`
     position: relative;
     width: 100%;
     padding-top: 150px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
   h1 {
     padding-bottom: 30px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    ${down('md')} {
+      word-break: break-word;
+      hyphens: auto;
+    }
     .media-hover-container {
       display: inline-block;
     }
