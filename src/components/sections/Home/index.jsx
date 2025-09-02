@@ -1,6 +1,7 @@
 // Styles
 import { HomeStyle } from "./index.style"
 // Nodes
+import Link from 'next/link'
 // React
 // Modules
 import Section from "@/components/modules/Section";
@@ -30,9 +31,9 @@ export default function Home({ ...props }) {
           <img src="/icons/bs-logo.svg" alt="Buried Signals" className="bs-logo" />
         </div>
         <div className="header-about-link-container">
-          <a href="/about" className="header-about-link">
+          <Link href="/about" className="header-about-link">
             <p className="typography-08">About</p>
-          </a>
+          </Link>
         </div>
         <div className="titles">
           <h1 className="typography-04"><a href="https://www.youtube.com/@buriedsignals" target="_blank" rel="noopener noreferrer"><SpanGradientText hover={ true } revert={ true }>Visual&nbsp;</SpanGradientText></a>journalist and <a href="https://buriedsignals.substack.com/" target="_blank" rel="noopener noreferrer"><SpanGradientText hover={ true } revert={ true }>technologist</SpanGradientText></a></h1>

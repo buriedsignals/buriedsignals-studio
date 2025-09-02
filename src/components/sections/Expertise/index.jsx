@@ -37,7 +37,7 @@ export default function Expertise({ ...props }) {
         */}
         <div className="client-container container-module-large">
           <div className="title-container">
-            <h3 className="typography-05">What I'm up to 👀</h3>
+            <h3 className="typography-05">What I&apos;m up to 👀</h3>
           </div>
           <ul className="clients">
             <li className="client">

@@ -13,10 +13,14 @@ export default function Canvas({ ...props }) {
   const [colors, setColors] = useState()
   const [active, setActive] = useState(true)
   // const [mousePos, setMousePos] = useState({ x: 0, y: 0, _x: 0, _y: 0 })
+  
+  // Get gradient colors based on window width
+  const gradientColors = useGradientColor("#71f2ba", "#377A5D", typeof window !== 'undefined' ? window.innerWidth / 50 : 30)
+  
   // Effects
   useEffect(() => {
     function onResize() {    
-      setColors(useGradientColor("#71f2ba", "#377A5D", window.innerWidth / 50))
+      setColors(gradientColors)
       if (window.innerWidth <= 500) {
         setActive(false)
       } else {
