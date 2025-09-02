@@ -12,7 +12,7 @@ import useScroll from '@/hooks/useScroll';
 import Layout from '@/components/layouts';
 
 // Metas
-const title = 'Tom Vaillant'
+const title = 'Buried Signals'
 const url = 'https://studio.tomvaillant.com/'
 const description = "Visual journalist and technologist reporting on data-driven stories."
 const keywords = 'dataviz, information, design, journalism, visualisation, narrative, interactive, visual, awards, resources, insights, courses, community, data'

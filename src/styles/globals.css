@@ -341,6 +341,14 @@ button, a {
   line-height: 15px;
 }
 
+.typography-14 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 140%;
+}
+
 @media screen and (max-width: 955px) {
   .typography-01 {
     font-size: 20px;
@@ -371,6 +379,10 @@ button, a {
   .typography-12 {
     font-size: 20px;
   }
+
+  .typography-14 {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -387,7 +399,7 @@ button, a {
 
 @media (max-width: 375px) {
   .typography-04 {
-    font-size: 5vh;
+    font-size: 6vh;
   }
 }
 
